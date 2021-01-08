@@ -33,7 +33,7 @@ void cargar_personajes(Diccionario * lista);
 /*
  * Recibe los atributos necesarios para crear un objeto herado de Personaje, de la clase indicada, y lo carga en la memoria dinamica.
  */
-void crear_personaje(const string& tipo, const string& nombre, int vida, int escudo, Diccionario * lista);
+void crear_personaje(const string& tipo, const string& nombre, int vida, int escudo, Diccionario * dicc);
 
 /*
  * Permite cargar el menu, mostrarlo por pantalla. Retorna la opcion elegida por el jugador.

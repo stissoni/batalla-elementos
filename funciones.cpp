@@ -32,23 +32,23 @@ void cargar_personajes(Diccionario * lista){
     cout << "Carga completa!" << endl;
 }
 
-void crear_personaje(const string& tipo, const string& nombre, int vida, int escudo, Diccionario * lista){
+void crear_personaje(const string& tipo, const string& nombre, int vida, int escudo, Diccionario * dicc){
     cout << "Cargando personaje..." << endl;
     if (tipo == TIPO_AGUA){
         Personaje * personaje = new Agua(nombre, vida, escudo);
-        lista->alta(personaje, nombre, PRIMERA_POSICION);
+        dicc->alta(personaje, nombre, PRIMERA_POSICION);
     }
     else if (tipo == TIPO_FUEGO){
         Personaje * personaje = new Fuego(nombre, vida, escudo);
-        lista->alta(personaje, nombre, PRIMERA_POSICION);
+        dicc->alta(personaje, nombre, PRIMERA_POSICION);
     }
     else if (tipo == TIPO_TIERRA){
         Personaje * personaje = new Tierra(nombre, vida, escudo);
-        lista->alta(personaje, nombre, PRIMERA_POSICION);
+        dicc->alta(personaje, nombre, PRIMERA_POSICION);
     }
     else if (tipo == TIPO_AIRE){
         Personaje * personaje = new Aire(nombre, vida, escudo);
-        lista->alta(personaje, nombre, PRIMERA_POSICION);
+        dicc->alta(personaje, nombre, PRIMERA_POSICION);
     }
 }
 

@@ -28,6 +28,7 @@ private:
     */
     Diccionario* personajes;
     bool esta_activo;
+    Juego* juego;
 
 public:
     /*
@@ -112,6 +113,11 @@ private:
     Imprime por pantalla las opciones del menu
     */
     void mostrar_opciones();
+    
+    /*
+    Imprime por pantalla las opciones del submenu
+    */
+    void mostrar_opciones_submenu();
 
     /*
     Pide al usuario un numero entero, que representara una opcion del menu, y lo devuelve
@@ -127,6 +133,10 @@ private:
     Pide al usuario un nombre y lo devuelve
     */
     string pedir_nombre_personaje();
+    
+    void comenzar_juego();
+    
+    void seleccionar_personaje();
 
 };
 

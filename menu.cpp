@@ -3,18 +3,19 @@
 Menu::Menu() {
     personajes = 0;
     esta_activo = false;
+    juego();
 }
 
 Menu::~Menu() {
     while(!personajes->vacia()) {
-        Personaje* eliminado = personajes->baja_y_devuelve(1);
+        Personaje* eliminado = personajes->baja();
         delete eliminado;
     }
     delete personajes;
 }
 
 void Menu::cargar_personajes(string archivo) {
-    personajes = new Lista();
+    personajes = new Diccionario();
     ifstream archivo_personajes;
 
     archivo_personajes.open(archivo);
@@ -41,7 +42,7 @@ void Menu::cargar_personaje_segun_elemento(string elemento, string nombre, int e
     else if(elemento == ELEMENTO_AIRE) nuevo = new Personaje_de_aire(nombre, escudo, vida);
     else if(elemento == ELEMENTO_FUEGO) nuevo = new Personaje_de_fuego(nombre, escudo, vida);
     else if(elemento == ELEMENTO_TIERRA) nuevo = new Personaje_de_tierra(nombre, escudo, vida);
-    personajes->alta(nuevo);
+    personajes->alta(nombre, nuevo);
 }
 
 void Menu::cargar_personaje_segun_elemento(string elemento, string nombre) {
@@ -50,7 +51,7 @@ void Menu::cargar_personaje_segun_elemento(string elemento, string nombre) {
     else if(elemento == ELEMENTO_AIRE) nuevo = new Personaje_de_aire(nombre);
     else if(elemento == ELEMENTO_FUEGO) nuevo = new Personaje_de_fuego(nombre);
     else if(elemento == ELEMENTO_TIERRA) nuevo = new Personaje_de_tierra(nombre);
-    personajes->alta(nuevo);
+    personajes->alta(nombre, nuevo);
 }
 
 void Menu::agregar_nuevo_personaje() {
@@ -62,7 +63,7 @@ void Menu::agregar_nuevo_personaje() {
 void Menu::eliminar_personaje() {
     if(!personajes->vacia()) {
         string nombre = pedir_nombre_personaje();
-        Personaje* eliminado = personajes->baja_y_devuelve(nombre);
+        Personaje* eliminado = personajes->baja(nombre);
         if(eliminado) {
             delete eliminado;
             cout << "El personaje " << nombre << " fue eliminado" << endl;
@@ -74,7 +75,7 @@ void Menu::eliminar_personaje() {
 
 void Menu::mostrar_nombres_personajes() {
     if(!personajes->vacia())
-        for(int i = 1; i <= personajes->obtener_cantidad(); i++) cout << personajes->consulta(i)->nombre_personaje() << endl;
+        personajes->imprimir_claves_ordenadas(); # print_in_order o algo de eso
     else cout << ERROR_LISTA_VACIA << endl;
 }
 
@@ -83,10 +84,9 @@ void Menu::detalles_personaje() {
         string nombre = pedir_nombre_personaje();
         Personaje* solicitado = personajes->consulta(nombre);
         if(solicitado) {
-            Personaje* solicitado = personajes->obtener_actual();
             solicitado->mostrar_detalles();
         } else {
-            cout << "El personaje " << nombre << " no se encuentra en la lista" << endl;
+            cout << "El personaje " << nombre << " no existe" << endl;
         }
     } else {
         cout << ERROR_LISTA_VACIA << endl;
@@ -99,7 +99,7 @@ void Menu::alimentar_personaje() {
         Personaje* solicitado = personajes->consulta(nombre);
         if(solicitado) {
             solicitado->alimentar();
-        } else cout << "El personaje " << nombre << " no se encuentra en la lista" << endl;
+        } else cout << "El personaje " << nombre << " no existe" << endl;
     } else {
         cout << ERROR_LISTA_VACIA << endl;
     }
@@ -134,7 +134,7 @@ void Menu::interfaz() {
                 detalles_personaje();
                 break;
             case 5:
-                alimentar_personaje();
+                comenzar_juego();
                 break;
             case 6:
                 salir();
@@ -143,10 +143,65 @@ void Menu::interfaz() {
     }
 }
 
+void Menu::comenzar_juego() {
+    while(esta_activo && !juego.comenzo()){
+        mostrar_opciones_submenu();
+        int opcion = pedir_opcion();
+        switch(opcion)
+        {
+            case 1:
+                detalles_personaje();
+                break;
+            case 2:
+                mostrar_nombres_personajes();
+                break;
+            case 3:
+                seleccionar_personaje();
+                break;
+            case 4:
+                salir();
+                break;
+        }
+    }
+    juego.jugar();
+}
+
+void Menu::seleccionar_personaje() {
+    string nombre = pedir_nombre_personaje();
+    if(!personajes->vacia()) {
+        Personaje* solicitado = personajes->consulta(nombre);
+        if(solicitado && !solicitado->fue_seleccionado()) {
+            if(determinar_turno_seleccion() == JUGADOR_1) {
+                juego.jugador_1.agregar_personaje(solicitado);
+            } else {
+                juego.jugador_2.agregar_personaje(solicitado);
+            turno_seleccion++;
+        } else {
+            cout << ERROR_PERSONAJE_NO_DISPONIBLE << endl;
+        }
+    } else {
+        cout << ERROR_DICCIONARIO_VACIO << endl;
+    }
+}
+    
+void Menu::determinar_turno_seleccion() {
+    if(turno_seleccion % 2 == 0) return JUGADOR_1;
+    else return JUGADOR_2;
+}
+
 void Menu::mostrar_opciones() {
     cout << "Elija una opcion (ingrese el numero): " << endl;
     cout << "1. " << OPCION_1 << endl;
     cout << "2. " << OPCION_2 << endl;
+    cout << "3. " << OPCION_7 << endl;
+    cout << "6. " << OPCION_6 << endl;
+}
+
+
+void Menu::mostrar_opciones_submenu() {
+    cout << "Elija una opcion (ingrese el numero): " << endl;
+    cout << "1. " << OPCION_4 << endl;
+    cout << "2. " << OPCION_3 << endl;
     cout << "3. " << OPCION_3 << endl;
     cout << "4. " << OPCION_4 << endl;
     cout << "5. " << OPCION_5 << endl;

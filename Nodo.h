@@ -1,27 +1,34 @@
 //
-// Created by santi on 24/11/2020.
+// Created by santi on 10/1/2021.
 //
 
-#ifndef TP2_BATALLA_ELEMENTOS_NODO_H
-#define TP2_BATALLA_ELEMENTOS_NODO_H
+#ifndef TP2_BATALLA_ELEMENTOS_NODO_ABB_H
+#define TP2_BATALLA_ELEMENTOS_NODO_ABB_H
 
+#include <string>
 #include "Personaje.h"
 
-typedef Personaje * Dato;
+using namespace std;
+
+typedef string Key;
+typedef Personaje * Value;
+
+const string IZQUIERDO = "izquierdo";
+const string DERECHO = "derecho";
 
 class Nodo {
 private:
-    string key;
-    Dato dato;
-    Nodo * siguiente;
+    Value value;
+    Nodo * der;
+    Nodo * izq;
+    Key key;
 public:
-    explicit Nodo(Dato d, string k);
-    void cambiar_dato(Dato d);
-    void cambiar_siguiente(Nodo * s);
-    Dato obtener_dato();
-    Nodo * obtener_siguiente();
-    string obtener_key();
+    explicit Nodo(Key _key, Value _value);
+    Nodo * obtener_nodo(string izq_o_der);
+    Key consultar_key();
+    Value consultar_value();
+    void asignar_dato(Key _key, Value _value, string izq_o_der);
 };
 
 
-#endif //TP2_BATALLA_ELEMENTOS_NODO_H
+#endif //TP2_BATALLA_ELEMENTOS_NODO_ABB_H

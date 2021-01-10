@@ -8,7 +8,7 @@ Menu::Menu() {
 
 Menu::~Menu() {
     while(!personajes->vacia()) {
-        Personaje* eliminado = personajes->baja();
+        Personaje* eliminado = personajes->baja(); # baja y devuelve el primer personaje
         delete eliminado;
     }
     delete personajes;

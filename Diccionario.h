@@ -22,6 +22,8 @@ public:
     Value buscar(Key key);
     // Recorre el diccionario en busca de la key, devuelve true si encuentra la key, sino devuelve false.
     bool esta_key(Key key);
+    // Destructor
+    virtual ~Diccionario();
 };
 
 #endif //TP2_BATALLA_ELEMENTOS_ARBOL_H

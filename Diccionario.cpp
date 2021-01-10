@@ -85,4 +85,8 @@ Value Diccionario::buscar(Key key) {
     return nullptr;
 }
 
+Diccionario::~Diccionario() {
+
+}
+
 

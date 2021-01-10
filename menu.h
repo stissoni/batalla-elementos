@@ -7,7 +7,7 @@
 #include "personaje_de_fuego.h"
 #include "personaje_de_tierra.h"
 #include <fstream>
-#include "lista.h"
+#include "diccionario.h"
 
 const string ERROR_APERTURA = "No se pudo abrir el archivo de personajes";
 const string ERROR_LISTA_VACIA = "No hay personajes en la lista";
@@ -26,8 +26,9 @@ private:
     /*
     Atributos
     */
-    Lista* personajes;
+    Diccionario* personajes;
     bool esta_activo;
+    Juego* juego;
 
 public:
     /*
@@ -53,6 +54,12 @@ public:
     Este metodo se encarga de interactuar con el usuario, mostrando las opciones y ejecutando las tareas que el usuario elija
     */
     void interfaz();
+    
+    /*
+    Activa el submenu
+    Este metodo se encarga de interactuar con el usuario, mostrando las opciones y ejecutando las tareas que el usuario elija
+    */
+    void interfaz_submenu();
 
 private:
     /*
@@ -106,6 +113,11 @@ private:
     Imprime por pantalla las opciones del menu
     */
     void mostrar_opciones();
+    
+    /*
+    Imprime por pantalla las opciones del submenu
+    */
+    void mostrar_opciones_submenu();
 
     /*
     Pide al usuario un numero entero, que representara una opcion del menu, y lo devuelve
@@ -121,6 +133,10 @@ private:
     Pide al usuario un nombre y lo devuelve
     */
     string pedir_nombre_personaje();
+    
+    void comenzar_juego();
+    
+    void seleccionar_personaje();
 
 };
 

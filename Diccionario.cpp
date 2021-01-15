@@ -126,8 +126,30 @@ void Diccionario::baja(Key key){
             
     else{
         cout << "No esta." << endl;
-    }
-    
-        
+    }   
 }
+    
+Nodo* Diccionario::remove(Nodo* node, Key key)
+{
+        // The node has two children (left and right)
+        else
+        {
+            // Find successor or predecessor to avoid quarrel
+            T successor_data = this->successor(data);
 
+            // Replace node's key with successor's key
+            node->set_data(successor_data);
+
+            // Delete the old successor's key
+            node->set_right(remove(node->get_right(), successor_data));
+        }
+    }
+
+    else if (node->get_data() < data)
+        node->set_right(remove(node->get_right(), data));
+
+    else
+        node->set_left(remove(node->get_left(), data));
+
+    return node;
+}

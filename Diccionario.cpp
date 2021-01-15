@@ -94,6 +94,52 @@ Diccionario::~Diccionario() {
 
 }
 
+void Diccionario::findSuccessor(Node* root, Node*& succ, int key)
+{
+    // base case
+    if (root == nullptr) {
+        succ = nullptr;
+        return;
+    }
+ 
+    // if node with key's value is found, the successor is minimum value
+    // node in its right subtree (if any)
+    if (root->data == key)
+    {
+        if (root->right)
+            succ = findMinimum(root->right);
+    }
+    // if given key is less than the root node, recur for left subtree
+    else if (key < root->data)
+    {
+        // update successor to current node before recursing in left subtree
+        succ = root;
+        findSuccessor(root->left, succ, key);
+    }
+ 
+    // if given key is more than the root node, recur for right subtree
+    else
+        findSuccessor(root->right, succ, key);
+}
+
+void Diccionario::buscar_min(Nodo* raiz) {
+    while(raiz->obtener_izq()) raiz = raiz->obtener_izq();
+    return raiz;
+}
+
+void Diccionario::sucesor(Nodo* raiz, Nodo*& suc, Key clave) { // revisar el *& wtf amigo
+    if(!raiz->es_raiz()) {
+        succ = 0;
+        return;
+    }
+    if(raiz->obtener_clave() == clave) {
+        if(raiz->obtener_der()) suc = buscar_min(raiz->obtener_der());
+    } else if(clave < raiz->obtener_clave()) {
+        suc = raiz;
+        sucesor(raiz->obtener_izq(), suc, clave);
+    else sucesor(raiz->obtener_der(), suc, clave);
+}
+
 void Diccionario::baja(Key key){
     if(esta_key(key)){
 
@@ -107,49 +153,21 @@ void Diccionario::baja(Key key){
             else(actual->obter_padre->solo_hijo_der())  
                 actual->obtener_padre()->insertar_der(0);
         }
-        
-        else if(actual->es_padre()){
-            if(actual->solo_hijo_izq()){
-                actual->obtener_izq()->insertar_padre(actual->obtener_padre());
-            }
-            else if(actual->solo_hijo_der()){
-                actual->obtener_der()->insertar_padre(actual->obtener_padre());
-            }
-            else{
-                actual->obtener_der()->insertar_padre(actual->obtener_padre());
-                actual->obtener_der()->insertar_izq(atual->obtener_izq());
-            }
+        // The node has two children (left and right)
+        else{
+            // Find successor or predecessor to avoid quarrel
+            Nodo* sucesor = this->sucesor(key);
+
+            // Replace node's key with successor's key
+            actual->copiar_nodo(sucesor);
+
+            // Delete the old successor's key
+            node->set_right((node->get_right(), successor_data));
         }
-        
         delete actual;
         reiniciar();
-            
+    }
     else{
         cout << "No esta." << endl;
     }   
-}
-    
-Nodo* Diccionario::remove(Nodo* node, Key key)
-{
-        // The node has two children (left and right)
-        else
-        {
-            // Find successor or predecessor to avoid quarrel
-            T successor_data = this->successor(data);
-
-            // Replace node's key with successor's key
-            node->set_data(successor_data);
-
-            // Delete the old successor's key
-            node->set_right(remove(node->get_right(), successor_data));
-        }
-    }
-
-    else if (node->get_data() < data)
-        node->set_right(remove(node->get_right(), data));
-
-    else
-        node->set_left(remove(node->get_left(), data));
-
-    return node;
 }

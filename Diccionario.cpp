@@ -140,8 +140,11 @@ void Diccionario::sucesor(Nodo* raiz, Nodo*& suc, Key clave) { // revisar el *& 
 }
 
 void Diccionario::baja(Key key) {
-    Nodo* act = raiz;
-    _baja(act, key);
+    if(esta_key(key)) {
+        Nodo* act = raiz;
+        _baja(act, key);
+    } else {
+        cout << ERROR_CLAVE_NOT_FOUND << endl;
 
 Nodo* Diccionario::_baja(Nodo* act, Key key){
     if(!act) return act;
@@ -164,40 +167,4 @@ Nodo* Diccionario::_baja(Nodo* act, Key key){
             act->copiar_nodo(act);
             act->obtener_der() = _borrar(act->obtener_der(), act->obtener_clave());
         }
-}
-
-void Diccionario::_baja(Key key){
-    if(esta_key(key)){
-        if(!actual->obtener_padre() && !actual->obtener_der() && !actual->obtener_izq()){
-            raiz = 0;
-        } else if(!actual->obtener_padre() && actual->solo_hijo_izq()) {
-            borrar = raiz;
-            raiz = actual->obtener_izq();
-        } else if(!actual->obtener_padre)() && actual->solo_hijo_der()) {
-            borrar = raiz;
-            raiz = actual->obtener_der();
-        } else if(actual->es_hoja()) {
-            if(actual->obter_padre->solo_hijo_izq())
-                 actual->obtener_padre()->insertar_izq(0);    
-            else(actual->obter_padre->solo_hijo_der())  
-                actual->obtener_padre()->insertar_der(0);
-        } else if(actual->solo_hijo_izq()) {
-            
-        }
-        // The node has two children (left and right)
-        else{
-            // Find successor or predecessor to avoid quarrel
-            Nodo* sucesor = this->sucesor(key);
-
-             = sucesor;
-
-            // Delete the old successor's key
-            actual->insertar_der((node->get_right(), successor_data));
-        }
-        delete actual;
-        reiniciar();
-    }
-    else{
-        cout << "No esta." << endl;
-    }   
 }

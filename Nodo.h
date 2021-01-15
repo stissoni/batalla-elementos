@@ -13,9 +13,6 @@ using namespace std;
 typedef string Key;
 typedef Personaje* Value;
 
-const string IZQUIERDO = "izquierdo";
-const string DERECHO = "derecho";
-
 class Nodo {
 private:
     Value value;

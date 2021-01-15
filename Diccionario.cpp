@@ -95,12 +95,39 @@ Diccionario::~Diccionario() {
 }
 
 void Diccionario::baja(Key key){
-    if(!esta_key(key)){
+    if(esta_key(key)){
+
+        if(!actual->obtener_padre() && !actual->obtener_der() && !actual->obtener_izq()){
+            raiz = 0;
+        }
+       
+        else if(actual->es_hoja()){
+            if(actual->obter_padre->solo_hijo_izq())
+                 actual->obtener_padre()->insertar_izq(0);    
+            else(actual->obter_padre->solo_hijo_der())  
+                actual->obtener_padre()->insertar_der(0);
+        }
+        
+        else if(actual->es_padre()){
+            if(actual->solo_hijo_izq()){
+                actual->obtener_izq()->insertar_padre(actual->obtener_padre());
+            }
+            else if(actual->solo_hijo_der()){
+                actual->obtener_der()->insertar_padre(actual->obtener_padre());
+            }
+            else{
+                actual->obtener_der()->insertar_padre(actual->obtener_padre());
+                actual->obtener_der()->insertar_izq(atual->obtener_izq());
+            }
+        }
+        
+        delete actual;
+        reiniciar();
+            
+    else{
         cout << "No esta." << endl;
     }
-    else{
-        
-    }
     
+        
 }
 

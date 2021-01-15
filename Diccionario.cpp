@@ -44,14 +44,13 @@ void Diccionario::alta(Key key, Value value) {
     cantidad_nodos++;
 }
 
-bool Diccionario::esta_key(Key key) {
+bool Diccionario::esta_key(Key key, Nodo* nuevo) {
     bool encontrado = false;
     if (raiz != nullptr){
         Nodo * aux = raiz;
         while (aux != nullptr && encontrado == 0){
             if (key == aux->consultar_key()){
                 encontrado = true;
-                this->actual = aux;
             }
             else if (key.compare(aux->consultar_key()) < 0){
                 aux = aux->obtener_izq();
@@ -140,29 +139,60 @@ void Diccionario::sucesor(Nodo* raiz, Nodo*& suc, Key clave) { // revisar el *& 
     else sucesor(raiz->obtener_der(), suc, clave);
 }
 
-void Diccionario::baja(Key key){
-    if(esta_key(key)){
+void Diccionario::baja(Key key) {
+    Nodo* act = raiz;
+    _baja(act, key);
 
+Nodo* Diccionario::_baja(Nodo* act, Key key){
+    if(!act) return act;
+    else if(key < act->obtener_clave()) act->obtener_izq() = _baja(act->obtener_izq(), key);
+    else if(key > act->obtener_clave)) act->obtener_der() = _baja(act->obtener_der(), key);
+    else {
+        if(!act->obtener_izq && !act->obtener_der) {
+            delete act;
+            act = 0;
+        } else if(!act->obtener_izq()) {
+            Nodo* aux = act;
+            act = act->obtener_der();
+            delete aux;
+        } else if(!act->obtener_der()) {
+            Nodo* aux = act;
+            act = act->obtener_izq();
+            delete aux;
+        } else {
+            Nodo* aux = buscar_min(act->obtener_der());
+            act->copiar_nodo(act);
+            act->obtener_der() = _borrar(act->obtener_der(), act->obtener_clave());
+        }
+}
+
+void Diccionario::_baja(Key key){
+    if(esta_key(key)){
         if(!actual->obtener_padre() && !actual->obtener_der() && !actual->obtener_izq()){
             raiz = 0;
-        }
-       
-        else if(actual->es_hoja()){
+        } else if(!actual->obtener_padre() && actual->solo_hijo_izq()) {
+            borrar = raiz;
+            raiz = actual->obtener_izq();
+        } else if(!actual->obtener_padre)() && actual->solo_hijo_der()) {
+            borrar = raiz;
+            raiz = actual->obtener_der();
+        } else if(actual->es_hoja()) {
             if(actual->obter_padre->solo_hijo_izq())
                  actual->obtener_padre()->insertar_izq(0);    
             else(actual->obter_padre->solo_hijo_der())  
                 actual->obtener_padre()->insertar_der(0);
+        } else if(actual->solo_hijo_izq()) {
+            
         }
         // The node has two children (left and right)
         else{
             // Find successor or predecessor to avoid quarrel
             Nodo* sucesor = this->sucesor(key);
 
-            // Replace node's key with successor's key
-            actual->copiar_nodo(sucesor);
+             = sucesor;
 
             // Delete the old successor's key
-            node->set_right((node->get_right(), successor_data));
+            actual->insertar_der((node->get_right(), successor_data));
         }
         delete actual;
         reiniciar();

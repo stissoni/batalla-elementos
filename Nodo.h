@@ -22,10 +22,17 @@ private:
     Key key;
 public:
     explicit Nodo(Key _key, Value _value);
-    Nodo* obtener_nodo(string izq_o_der);
-    Key consultar_key();
-    Value consultar_value();
     void asignar_dato(Key _key, Value _value, string izq_o_der);
+    Key consultar_clave();
+    Value consultar_value();
+    void insertar_izq(Nodo* izq);
+    void insertar_der(Nodo* der);
+    void insertar_padre(Nodo* padre);
+    Nodo* obtener_izq();
+    Nodo* obtener_der();
+    Nodo* obtener_padre();
+    // Nodo* obtener_nodo(string izq_o_der);
+
 };
 
 

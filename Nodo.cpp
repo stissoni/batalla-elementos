@@ -16,14 +16,6 @@ Key Nodo::consultar_clave() {
     return key;
 }
 
-Nodo *Nodo::obtener_nodo(string izq_o_der) {
-    if (izq_o_der == IZQUIERDO){
-        return izq;
-    }
-    else{
-        return der;
-    }
-}
 
 void Nodo::insertar_padre(Nodo* padre) {
     this->padre = padre;
@@ -68,7 +60,7 @@ bool Nodo::solo_hijo_izq() {
     return (this->obtener_izq() != NULL && this->obtener_der() == NULL);
 }
 
-Value Nodo::consultar_value() {
+Value Nodo::consultar_valor() {
     return value;
 }
 

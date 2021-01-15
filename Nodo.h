@@ -11,7 +11,7 @@
 using namespace std;
 
 typedef string Key;
-typedef Personaje * Value;
+typedef Personaje* Value;
 
 const string IZQUIERDO = "izquierdo";
 const string DERECHO = "derecho";
@@ -19,12 +19,13 @@ const string DERECHO = "derecho";
 class Nodo {
 private:
     Value value;
-    Nodo * der;
-    Nodo * izq;
+    Nodo* der;
+    Nodo* izq;
+    Nodo* padre;
     Key key;
 public:
     explicit Nodo(Key _key, Value _value);
-    Nodo * obtener_nodo(string izq_o_der);
+    Nodo* obtener_nodo(string izq_o_der);
     Key consultar_key();
     Value consultar_value();
     void asignar_dato(Key _key, Value _value, string izq_o_der);

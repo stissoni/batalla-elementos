@@ -25,13 +25,15 @@ public:
     void asignar_dato(Key _key, Value _value, string izq_o_der);
     Key consultar_clave();
     Value consultar_value();
-    void insertar_izq(Nodo* izq);
-    void insertar_der(Nodo* der);
+    bool es_hoja();
+    void insertar_der(Nodo* izq);
+    void insertar_izq(Nodo* der);
     void insertar_padre(Nodo* padre);
-    Nodo* obtener_izq();
     Nodo* obtener_der();
+    Nodo* obtener_izq();
     Nodo* obtener_padre();
-    // Nodo* obtener_nodo(string izq_o_der);
+    bool solo_hijo_der();
+    bool solo_hijo_izq();
 
 };
 

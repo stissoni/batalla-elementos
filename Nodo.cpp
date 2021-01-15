@@ -62,5 +62,8 @@ Value Nodo::obtener_valor() {
     return value;
 }
 
-                
+void Nodo::copiar_nodo(Nodo* n) {
+    this->key = n->key;
+    this->value = n->value;
+}
 

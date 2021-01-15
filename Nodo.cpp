@@ -12,7 +12,7 @@ Nodo::Nodo(Key key, Value value) {
     this->value = value;
 }
 
-Key Nodo::consultar_clave() {
+Key Nodo::obtener_clave() {
     return key;
 }
 
@@ -58,7 +58,7 @@ bool Nodo::solo_hijo_izq() {
     return (this->obtener_izq() != NULL && this->obtener_der() == NULL);
 }
 
-Value Nodo::consultar_valor() {
+Value Nodo::obtener_valor() {
     return value;
 }
 

@@ -22,7 +22,6 @@ private:
     Key key;
 public:
     explicit Nodo(Key _key, Value _value);
-    void asignar_dato(Key _key, Value _value, string izq_o_der);
     Key consultar_clave();
     Value consultar_valor();
     bool es_hoja();

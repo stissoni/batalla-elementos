@@ -22,15 +22,15 @@ private:
     Key key;
 public:
     explicit Nodo(Key _key, Value _value);
-    Key consultar_clave();
-    Value consultar_valor();
     bool es_hoja();
     void insertar_der(Nodo* izq);
     void insertar_izq(Nodo* der);
     void insertar_padre(Nodo* padre);
+    Key obtener_clave();
     Nodo* obtener_der();
     Nodo* obtener_izq();
     Nodo* obtener_padre();
+    Value obtener_valor();
     bool solo_hijo_der();
     bool solo_hijo_izq();
 

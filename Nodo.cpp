@@ -26,25 +26,23 @@ void Nodo::insertar_padre(Nodo* padre) {
 //}
 
 
-void Nodo::insertar_izq(Nodo* izq){
+void Nodo::insertar_izq(Nodo* izq) {
     this->izq = izq;
 }
 
-Nodo* Nodo::obtener_der()
-{
+Nodo* Nodo::obtener_der() {
     return der->der;
 }
 
-void Nodo::insertar_der(Nodo* der){
+void Nodo::insertar_der(Nodo* der) {
     this->der = der;
 }
 
-Nodo* Nodo::obtener_izq(){
+Nodo* Nodo::obtener_izq() {
     return this->izq;
 }
 
-Nodo* Nodo::obtener_padre()
-{
+Nodo* Nodo::obtener_padre() {
     return this->padre;
 }
 

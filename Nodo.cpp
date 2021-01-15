@@ -5,14 +5,14 @@
 #include "Nodo.h"
 #include <string>
 
-Nodo::Nodo(Key _key, Value _value) {
+Nodo::Nodo(Key key, Value value) {
     izq = nullptr;
     der = nullptr;
-    key = _key;
-    value = _value;
+    this->key = key;
+    this->value = value;
 }
 
-Key Nodo::consultar_key() {
+Key Nodo::consultar_clave() {
     return key;
 }
 
@@ -33,6 +33,51 @@ void Nodo::asignar_dato(Key _key, Value _value, string izq_o_der) {
     else {
         der = nodo_nuevo;
     }
+}
+
+void Nodo::baja(Key clave, Value valor, 
+
+void Nodo::insertar_padre(Nodo* padre) {
+    this->padre = padre;
+}
+
+//void Nodo::cambiar_dato(Value valor) {
+//    this->valor = valor;
+//}
+
+
+void Nodo::insertar_izq(Nodo* izq){
+    this->izq = izq;
+}
+
+Nodo* Nodo::obtener_der()
+{
+    return der->der;
+}
+
+void Nodo::insertar_der(Nodo* der){
+    this->der = der;
+}
+
+Nodo* Nodo::obtener_izq(){
+    return this->izq;
+}
+
+Nodo* Nodo::obtener_padre()
+{
+    return this->padre;
+}
+
+bool Nodo::es_hoja() {
+    return (this->obtener_izq() == NULL && this->obtener_der() == NULL);
+}
+
+bool Nodo::solo_hijo_der() {
+    return (this->obtener_izq() == NULL && this->obtener_der() != NULL);
+}
+
+bool Nodo::solo_hijo_izq() {
+    return (this->obtener_izq() != NULL && this->obtener_der() == NULL);
 }
 
 Value Nodo::consultar_value() {

@@ -9,7 +9,8 @@
 
 class Diccionario {
 private:
-    Nodo * raiz;
+    Nodo* raiz;
+    Nodo* actual;
     int cantidad_nodos;
 public:
     // Constructor.

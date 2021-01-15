@@ -25,18 +25,6 @@ Nodo *Nodo::obtener_nodo(string izq_o_der) {
     }
 }
 
-void Nodo::asignar_dato(Key _key, Value _value, string izq_o_der) {
-    auto * nodo_nuevo = new Nodo(_key, _value);
-    if (izq_o_der == IZQUIERDO){
-        izq = nodo_nuevo;
-    }
-    else {
-        der = nodo_nuevo;
-    }
-}
-
-void Nodo::baja(Key clave, Value valor, 
-
 void Nodo::insertar_padre(Nodo* padre) {
     this->padre = padre;
 }
@@ -84,4 +72,5 @@ Value Nodo::consultar_value() {
     return value;
 }
 
+                
 

@@ -189,23 +189,25 @@ void Menu::determinar_turno_seleccion() {
     else return JUGADOR_2;
 }
 
+
+
 void Menu::mostrar_opciones() {
     cout << "Elija una opcion (ingrese el numero): " << endl;
-    cout << "1. " << OPCION_1 << endl;
-    cout << "2. " << OPCION_2 << endl;
-    cout << "3. " << OPCION_7 << endl;
-    cout << "6. " << OPCION_6 << endl;
+    cout << "1. " << AGREGAR_PERSONAJE << endl;
+    cout << "2. " << ELIMINAR_PERSONAJE << endl;
+    cout << "3. " << MOSTRAR_NOMBRES << endl;
+    cout << "4. " << BUSCAR_DETALLES << endl;
+    cout << "5. " << COMENZAR_JUEGO << endl;
+    cout << "6. " << SALIR << endl;
 }
 
 
 void Menu::mostrar_opciones_submenu() {
     cout << "Elija una opcion (ingrese el numero): " << endl;
-    cout << "1. " << OPCION_4 << endl;
-    cout << "2. " << OPCION_3 << endl;
-    cout << "3. " << OPCION_3 << endl;
-    cout << "4. " << OPCION_4 << endl;
-    cout << "5. " << OPCION_5 << endl;
-    cout << "6. " << OPCION_6 << endl;
+    cout << "1. " << BUSCAR_DETALLES << endl;
+    cout << "2. " << MOSTRAR_NOMBRES << endl;
+    cout << "3. " << SELECCIONAR_PERSONAJE << endl;
+    cout << "4. " << SALIR << endl;
 }
 
 int Menu::pedir_opcion() {

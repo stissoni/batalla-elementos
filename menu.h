@@ -14,12 +14,14 @@ const string ERROR_LISTA_VACIA = "No hay personajes en la lista";
 
 const string MENSAJE_BIENVENIDA = "¡Bienvenido!";
 
-const string OPCION_1 = "Agregar un nuevo personaje a la lista";
-const string OPCION_2 = "Eliminar un personaje de la lista";
-const string OPCION_3 = "Mostrar todos los nombres de los personajes";
-const string OPCION_4 = "Buscar por nombre los detalles de un personaje en particular";
-const string OPCION_5 = "Alimentar un personaje";
-const string OPCION_6 = "Salir";
+const string AGREGAR_PERSONAJE = "Agregar un nuevo personaje a la lista";
+const string ELIMINAR_PERSONAJE = "Eliminar un personaje de la lista";
+const string MOSTRAR_NOMBRES = "Mostrar todos los nombres de los personajes";
+const string BUSCAR_DETALLES = "Buscar por nombre los detalles de un personaje en particular";
+const string COMENZAR_JUEGO = "Comenzar juego";
+const string ALIMENTAR_PERSONAJE = "Alimentar un personaje";
+const string SELECCIONAR_PERSONAJE = "Seleccionar personaje";
+const string SALIR = "Salir";
 
 class Menu {
 private:

@@ -64,6 +64,12 @@ bool Diccionario::esta_key(Key key, Nodo* nuevo) {
     return encontrado;
 }
 
+
+bool Diccionario::es_raiz() {
+    return (this->obtener_padre == 0)
+
+
+
 int Diccionario::largo() {
     return cantidad_nodos;
 }

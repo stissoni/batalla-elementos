@@ -69,14 +69,14 @@ void Menu::eliminar_personaje() {
             cout << "El personaje " << nombre << " fue eliminado" << endl;
         } else cout << "El personaje " << nombre << " no se encuentra en la lista" << endl;
     } else {
-        cout << ERROR_LISTA_VACIA << endl;
+        cout << ERROR_DICCIONARIO_VACIO << endl;
     }
 }
 
 void Menu::mostrar_nombres_personajes() {
     if(!personajes->vacia())
         personajes->imprimir_claves_ordenadas(); # print_in_order o algo de eso
-    else cout << ERROR_LISTA_VACIA << endl;
+    else cout << ERROR_DICCIONARIO_VACIO << endl;
 }
 
 void Menu::detalles_personaje() {
@@ -89,7 +89,7 @@ void Menu::detalles_personaje() {
             cout << "El personaje " << nombre << " no existe" << endl;
         }
     } else {
-        cout << ERROR_LISTA_VACIA << endl;
+        cout << ERROR_DICCIONARIO_VACIO << endl;
     }
 }
 
@@ -101,7 +101,7 @@ void Menu::alimentar_personaje() {
             solicitado->alimentar();
         } else cout << "El personaje " << nombre << " no existe" << endl;
     } else {
-        cout << ERROR_LISTA_VACIA << endl;
+        cout << ERROR_DICCIONARIO_VACIO << endl;
     }
 }
 

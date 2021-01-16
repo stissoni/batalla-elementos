@@ -10,27 +10,27 @@
 
 using namespace std;
 
-typedef string Key;
-typedef Personaje* Value;
+typedef string Clave;
+typedef Personaje* Valor;
 
 class Nodo {
 private:
-    Value value;
+    Valor valor;
     Nodo* der;
     Nodo* izq;
     Nodo* padre;
-    Key key;
+    Clave clave;
 public:
-    explicit Nodo(Key _key, Value _value);
+    explicit Nodo(Clave clave, Valor valor);
     bool es_hoja();
     void insertar_der(Nodo* izq);
     void insertar_izq(Nodo* der);
     void insertar_padre(Nodo* padre);
-    Key obtener_clave();
+    Clave obtener_clave();
     Nodo* obtener_der();
     Nodo* obtener_izq();
     Nodo* obtener_padre();
-    Value obtener_valor();
+    Valor obtener_valor();
     bool solo_hijo_der();
     bool solo_hijo_izq();
 

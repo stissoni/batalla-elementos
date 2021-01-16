@@ -35,7 +35,7 @@ public:
     bool esta_clave(Clave clave);
     
     // Devuelve true si el diccionario esta vacio, false de lo contrario.
-    bool esta_vacio();
+    bool vacio();
     
     // Se inserta una entrada en el diccionario. La entrada esta compuesta por un par clave: string y valor: puntero a Personaje.
     void insertar_dato(Clave clave, Valor valor);

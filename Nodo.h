@@ -23,8 +23,8 @@ private:
 public:
     explicit Nodo(Clave clave, Valor valor);
     bool es_hoja();
-    void insertar_der(Nodo* izq);
-    void insertar_izq(Nodo* der);
+    void insertar_der(Nodo* der);
+    void insertar_izq(Nodo* izq);
     void insertar_padre(Nodo* padre);
     Clave obtener_clave();
     Nodo* obtener_der();

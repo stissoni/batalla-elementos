@@ -19,7 +19,7 @@ public:
     // Agrega un par clave:valor al diccionario. Incrementa cantidad_nodos en uno.
     void alta(Key key, Value value);
     
-    // Elimina del diccionario el nodo que contiene la clave pasada por parametro
+    // Elimina del diccionario el nodo que contiene la clave pasada por parametro. Decrementa cantidad_nodos en uno.
     void baja(Key key);
     
     // Se le pasa una clave, y devuelve un puntero a Personaje si lo encuentra con la clave proporcionada.
@@ -28,11 +28,14 @@ public:
     // Encuentra el minimo valor en el diccionario.
     void buscar_min(Nodo* raiz);
     
+    // Devuelve true si el nodo es raiz, false de lo contrario.
+    bool es_raiz();
+    
     // Recorre el diccionario en busca de la clave, devuelve true si la encuentra, sino devuelve false.
     bool esta_key(Key key);
     
-    // Devuelve true si el nodo es raiz, false de lo contrario.
-    bool es_raiz();
+    // Devuelve true si el diccionario esta vacio, false de lo contrario.
+    bool esta_vacio();
     
     // Se inserta una entrada en el diccionario. La entrada esta compuesta por un par clave: string y valor: puntero a Personaje.
     void insertar_dato(Key key, Value value);

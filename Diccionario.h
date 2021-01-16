@@ -7,6 +7,8 @@
 
 #include "Nodo.h"
 
+const string ERROR_CLAVE_NO_ENCONTRADA = "La clave no se encuentra en el diccionario";
+
 class Diccionario {
 private:
     Nodo* raiz;

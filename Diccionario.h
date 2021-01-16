@@ -15,14 +15,35 @@ private:
 public:
     // Constructor.
     Diccionario();
+    
+    // Agrega un par clave:valor al diccionario. Incrementa cantidad_nodos en uno.
+    void alta(Key key, Value value);
+    
+    // Elimina del diccionario el nodo que contiene la clave pasada por parametro
+    void baja(Key key);
+    
+    // Se le pasa una clave, y devuelve un puntero a Personaje si lo encuentra con la clave proporcionada.
+    Value buscar(Key key);
+    
+    // Encuentra el minimo valor en el diccionario.
+    void buscar_min(Nodo* raiz);
+    
+    // Recorre el diccionario en busca de la clave, devuelve true si la encuentra, sino devuelve false.
+    bool esta_key(Key key);
+    
+    // Devuelve true si el nodo es raiz, false de lo contrario.
+    bool es_raiz();
+    
+    // Se inserta una entrada en el diccionario. La entrada esta compuesta por un par clave: string y valor: puntero a Personaje.
+    void insertar_dato(Key key, Value value);
+    
     // Devuelve el numero de entradas en el diccionario.
     int largo();
-    // Se inserta una entrada en el diccionario. La entrada esta compuesta por un par key: string y value: puntero a Personaje.
-    void insertar_dato(Key key, Value value);
-    // Se le pasa una key, y devuelve un puntero a Personaje si lo encuentra con la key proporcionada.
-    Value buscar(Key key);
-    // Recorre el diccionario en busca de la key, devuelve true si encuentra la key, sino devuelve false.
-    bool esta_key(Key key);
+    
+    // Encuentra el sucesor del nodo que contiene la clave pasada por parametro
+    void sucesor(Nodo* raiz, Nodo*& suc, Key clave);
+
+
     // Destructor
     virtual ~Diccionario();
 };

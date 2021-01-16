@@ -10,7 +10,8 @@
 #include "diccionario.h"
 
 const string ERROR_APERTURA = "No se pudo abrir el archivo de personajes";
-const string ERROR_LISTA_VACIA = "No hay personajes en la lista";
+const string ERROR_DICCIONARIO_VACIO = "No hay personajes en el diccionario";
+const string ERROR_PERSONAJE_NO_DISPONIBLE = "El personaje no está disponible"
 
 const string MENSAJE_BIENVENIDA = "¡Bienvenido!";
 

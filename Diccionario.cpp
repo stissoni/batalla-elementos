@@ -8,17 +8,17 @@
 using namespace std;
 
 Diccionario::Diccionario() {
-    raiz = nullptr;
+    raiz = 0;
     cantidad_nodos = 0;
 }
 
-void Diccionario::alta(Key key, Value value) {
-    auto * nodo_nuevo = new Nodo(key, value);
-    Nodo * aux = raiz;
-    Nodo * anterior;
+void Diccionario::alta(Clave clave, Valor valor) {
+    auto* nodo_nuevo = new Nodo(clave, valor);
+    Nodo* aux = raiz;
+    Nodo* anterior;
     
-     if (vacio()){
-        // Caso diccionario vacio
+    // Caso diccionario vacio
+     if (esta_vacio()){
         raiz = nodo_nuevo;
      }
     
@@ -26,33 +26,33 @@ void Diccionario::alta(Key key, Value value) {
     else{
         while (aux){
             anterior = aux;
-            if (key.compare(aux->consultar_key()) < 0){
+            if (clave.compare(aux->obtener_clave()) < 0){       
                 aux = aux->obtener_izq();
-        }
+             }
             else {
                 aux = aux->obtener_der();
             }
         }
         
-        if (key.compare(anterior->consultar_key()) < 0){
-            anterior->asignar_dato(key, value, IZQUIERDO);
+        if (clave.compare(anterior->obtener_clave()) < 0){
+            anterior->insertar_izq(nuevo_nodo);
         }
         else {
-            anterior->asignar_dato(key, value, DERECHO);
+            anterior->insertar_der(nuevo_nodo);
         }
     }
     cantidad_nodos++;
 }
 
-bool Diccionario::esta_key(Key key, Nodo* nuevo) {
+bool Diccionario::esta_clave(Clave clave, Nodo* nuevo) {
     bool encontrado = false;
-    if (raiz != nullptr){
+    if (raiz){
         Nodo * aux = raiz;
-        while (aux != nullptr && encontrado == 0){
-            if (key == aux->consultar_key()){
+        while (aux && !encontrado){
+            if (clave == aux->obtener_clave()){       
                 encontrado = true;
             }
-            else if (key.compare(aux->consultar_key()) < 0){
+            else if (clave.compare(aux->obtener_clave()) < 0){
                 aux = aux->obtener_izq();
             }
             else {
@@ -66,12 +66,12 @@ bool Diccionario::esta_key(Key key, Nodo* nuevo) {
 
 
 bool Diccionario::es_raiz() {
-    return (this->obtener_padre == 0)
+    return this->obtener_padre() == 0;
 }
 
         
-bool Diccionario::vacio() {
-    return (cantidad_nodos == 0)
+bool Diccionario::esta_vacio() {
+    return cantidad_nodos == 0;
 }
 
 
@@ -79,17 +79,17 @@ int Diccionario::largo() {
     return cantidad_nodos;
 }
 
-Value Diccionario::buscar(Key key) {
-    if (!esta_key(key)){
-        cout << "No se puede encontrar la key. Devolviendo puntero nulo";
+Valor Diccionario::buscar(Clave clave) {
+    if (!esta_clave(clave)){
+        cout << ERROR_CLAVE_NO_ENCONTRADA << endl;
     }
     else {
         Nodo * aux = raiz;
-        while (aux != nullptr){
-            if (key == aux->consultar_key()){
-                return aux->consultar_value();
+        while (aux){
+            if (clave == aux->obtener_clave()){             
+                return aux->obtener_valor();
             }
-            else if (key.compare(aux->consultar_key()) < 0){
+            else if (clave.compare(aux->obtener_clave()) < 0){
                 aux = aux->obtener_izq();
             }
             else {
@@ -97,13 +97,14 @@ Value Diccionario::buscar(Key key) {
             }
         }
     }
-    return nullptr;
+    return 0;
 }
 
 Diccionario::~Diccionario() {
 
 }
 
+/* CREO QUE NO LO USAMOS...
 void Diccionario::findSuccessor(Node* root, Node*& succ, int key)
 {
     // base case
@@ -131,12 +132,14 @@ void Diccionario::findSuccessor(Node* root, Node*& succ, int key)
     else
         findSuccessor(root->right, succ, key);
 }
+*/
 
 void Diccionario::buscar_min(Nodo* raiz) {
     while(raiz->obtener_izq()) raiz = raiz->obtener_izq();
     return raiz;
 }
 
+/*  CREO QUE NO LO USAMOS...
 void Diccionario::sucesor(Nodo* raiz, Nodo*& suc, Key clave) { // revisar el *& wtf amigo
     if(!raiz->es_raiz()) {
         succ = 0;
@@ -149,20 +152,25 @@ void Diccionario::sucesor(Nodo* raiz, Nodo*& suc, Key clave) { // revisar el *& 
         sucesor(raiz->obtener_izq(), suc, clave);
     else sucesor(raiz->obtener_der(), suc, clave);
 }
+ */   
 
-void Diccionario::baja(Key key) {
-    if(esta_key(key)) {
+
+void Diccionario::baja(Clave clave) {
+    if(esta_clave(clave)) {
         Nodo* act = raiz;
-        _baja(act, key);
+        _baja(act, clave);
     } else {
-        cout << ERROR_CLAVE_NOT_FOUND << endl;
-
-Nodo* Diccionario::_baja(Nodo* act, Key key){
+        cout << ERROR_CLAVE_NO_ENCONTRADA << endl;
+    }
+}
+    
+    
+Nodo* Diccionario::_baja(Nodo* act, Clave clave){
     if(!act) return act;
-    else if(key < act->obtener_clave()) act->obtener_izq() = _baja(act->obtener_izq(), key);
-    else if(key > act->obtener_clave)) act->obtener_der() = _baja(act->obtener_der(), key);
+    else if(clave < act->obtener_clave()) act->obtener_izq() = _baja(act->obtener_izq(), clave);
+    else if(clave > act->obtener_clave)) act->obtener_der() = _baja(act->obtener_der(), clave);
     else {
-        if(!act->obtener_izq && !act->obtener_der) {
+        if(!act->obtener_izq() && !act->obtener_der()) {
             delete act;
             act = 0;
         } else if(!act->obtener_izq()) {
@@ -175,7 +183,7 @@ Nodo* Diccionario::_baja(Nodo* act, Key key){
             delete aux;
         } else {
             Nodo* aux = buscar_min(act->obtener_der());
-            act->copiar_nodo(act);
-            act->obtener_der() = _borrar(act->obtener_der(), act->obtener_clave());
+            act->copiar_nodo(aux);
+            act->obtener_der() = _baja(act->obtener_der(), aux->obtener_clave());
         }
 }

@@ -32,7 +32,7 @@ public:
     bool es_raiz();
     
     // Recorre el diccionario en busca de la clave, devuelve true si la encuentra, sino devuelve false.
-    bool esta_key(Clave clave);
+    bool esta_clave(Clave clave);
     
     // Devuelve true si el diccionario esta vacio, false de lo contrario.
     bool esta_vacio();

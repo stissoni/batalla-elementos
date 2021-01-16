@@ -70,7 +70,7 @@ bool Diccionario::es_raiz() {
 }
 
         
-bool Diccionario::esta_vacio() {
+bool Diccionario::vacio() {
     return (cantidad_nodos == 0)
 }
 

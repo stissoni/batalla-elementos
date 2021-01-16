@@ -5,15 +5,15 @@
 #include "Nodo.h"
 #include <string>
 
-Nodo::Nodo(Key key, Value value) {
+Nodo::Nodo(Clave clave, Valor valor) {
     izq = nullptr;
     der = nullptr;
-    this->key = key;
-    this->value = value;
+    this->clave = clave;
+    this->valor = valor;
 }
 
-Key Nodo::obtener_clave() {
-    return key;
+Clave Nodo::obtener_clave() {
+    return clave;
 }
 
 
@@ -47,23 +47,23 @@ Nodo* Nodo::obtener_padre() {
 }
 
 bool Nodo::es_hoja() {
-    return (this->obtener_izq() == NULL && this->obtener_der() == NULL);
+    return (!this->obtener_izq() && !this->obtener_der());
 }
 
 bool Nodo::solo_hijo_der() {
-    return (this->obtener_izq() == NULL && this->obtener_der() != NULL);
+    return (!this->obtener_izq() && this->obtener_der());
 }
 
 bool Nodo::solo_hijo_izq() {
-    return (this->obtener_izq() != NULL && this->obtener_der() == NULL);
+    return (this->obtener_izq() && !this->obtener_der());
 }
 
-Value Nodo::obtener_valor() {
-    return value;
+Valor Nodo::obtener_valor() {
+    return valor;
 }
 
 void Nodo::copiar_nodo(Nodo* n) {
-    this->key = n->key;
-    this->value = n->value;
+    this->clave = n->clave;
+    this->valor = n->valor;
 }
 

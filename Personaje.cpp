@@ -47,6 +47,10 @@ void Personaje::alimentar() {
 }
 
 
+bool esta_vivo() {
+    return vida != 0;
+}
+
 string Personaje::mostrar_nombre() {
     return nombre;
 }

@@ -37,7 +37,7 @@ public:
     // Recorre el diccionario en busca de la clave, devuelve true si la encuentra, sino devuelve false.
     bool esta_clave(Clave clave);
     
-    // Imprime las claves (y valores?) del diccionario, siguiendo recorrido inorden 
+    // Imprime las claves del diccionario, siguiendo recorrido inorden 
     void imprimir_inorden(Nodo* raiz);
     
     // Se inserta una entrada en el diccionario. La entrada esta compuesta por un par clave: string y valor: puntero a Personaje.

@@ -187,3 +187,12 @@ Nodo* Diccionario::_baja(Nodo* act, Clave clave){
             act->obtener_der() = _baja(act->obtener_der(), aux->obtener_clave());
         }
 }
+    
+    
+void imprimir_inorden(Nodo* raiz) {
+    // recorrido inorden: subarbol izquierdo - raiz - subarbol derecho
+    if (raiz != 0) { // caso base: raiz = 0, subarbol vacio, corta la recursividad
+        imprimir_inorden(raiz->obtener_izq()); 
+        cout << raiz->obtener_clave << " "; // imprime solo la clave? 
+        imprimir_inorden(raiz->obtener_der());
+}

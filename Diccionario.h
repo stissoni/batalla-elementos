@@ -14,6 +14,7 @@ private:
     Nodo* raiz;
     Nodo* actual;
     int cantidad_nodos;
+ 
 public:
     // Constructor.
     Diccionario();
@@ -53,6 +54,9 @@ public:
 
     // Destructor
     virtual ~Diccionario();
+    
+private:
+    Nodo* _baja(Nodo* act, Clave clave);
 };
 
 #endif //TP2_BATALLA_ELEMENTOS_ARBOL_H

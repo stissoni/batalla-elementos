@@ -25,6 +25,8 @@ public:
     // Constructor: recibe nombre, vida y escudo de personaje.
     // Crea un personaje con esos valores, y le inicializa una energia de valor aleatorio.
     Personaje(string _nombre, int _vida, int _escudo);
+    // Devuelve true si vida != 0, false de lo contrario
+    bool esta_vivo();
     // Devuelve el nombre en forma de cadena de caracteres.
     string mostrar_nombre();
     //int mostrar_vida();

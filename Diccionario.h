@@ -24,11 +24,11 @@ public:
     // Elimina del diccionario el nodo que contiene la clave pasada por parametro. Decrementa cantidad_nodos en uno.
     void baja(Clave clave);
     
-    // Se le pasa una clave, y devuelve un puntero a Personaje si lo encuentra con la clave proporcionada.
-    Value buscar(Clave clave);
-    
     // Encuentra el minimo valor en el diccionario.
     void buscar_min(Nodo* raiz);
+    
+    // Se le pasa una clave, y devuelve un puntero a Personaje si lo encuentra con la clave proporcionada.
+    Value consulta(Clave clave);
     
     // Devuelve true si el nodo es raiz, false de lo contrario.
     bool es_raiz();

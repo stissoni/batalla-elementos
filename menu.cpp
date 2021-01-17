@@ -7,7 +7,7 @@ Menu::Menu() {
 }
 
 Menu::~Menu() {
-    while(!personajes->vacia()) {
+    while(!personajes->vacio()) {
         Personaje* eliminado = personajes->baja(); # baja y devuelve el primer personaje
         delete eliminado;
     }
@@ -61,7 +61,7 @@ void Menu::agregar_nuevo_personaje() {
 }
 
 void Menu::eliminar_personaje() {
-    if(!personajes->vacia()) {
+    if(!personajes->vacio()) {
         string nombre = pedir_nombre_personaje();
         Personaje* eliminado = personajes->baja(nombre);
         if(eliminado) {
@@ -74,13 +74,13 @@ void Menu::eliminar_personaje() {
 }
 
 void Menu::mostrar_nombres_personajes() {
-    if(!personajes->vacia())
+    if(!personajes->vacio())
         personajes->imprimir_claves_ordenadas(); # print_in_order o algo de eso
     else cout << ERROR_DICCIONARIO_VACIO << endl;
 }
 
 void Menu::detalles_personaje() {
-    if(!personajes->vacia()) {
+    if(!personajes->vacio()) {
         string nombre = pedir_nombre_personaje();
         Personaje* solicitado = personajes->consulta(nombre);
         if(solicitado) {
@@ -94,7 +94,7 @@ void Menu::detalles_personaje() {
 }
 
 void Menu::alimentar_personaje() {
-    if(!personajes->vacia()) {
+    if(!personajes->vacio()) {
         string nombre = pedir_nombre_personaje();
         Personaje* solicitado = personajes->consulta(nombre);
         if(solicitado) {
@@ -168,7 +168,7 @@ void Menu::comenzar_juego() {
 
 void Menu::seleccionar_personaje() {
     string nombre = pedir_nombre_personaje();
-    if(!personajes->vacia()) {
+    if(!personajes->vacio()) {
         Personaje* solicitado = personajes->consulta(nombre);
         if(solicitado && !solicitado->fue_seleccionado()) {
             if(determinar_turno_seleccion() == JUGADOR_1) {

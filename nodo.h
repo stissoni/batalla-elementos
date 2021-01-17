@@ -6,7 +6,7 @@
 #define TP2_BATALLA_ELEMENTOS_NODO_ABB_H
 
 #include <string>
-#include "Personaje.h"
+#include "personaje.h"
 
 using namespace std;
 

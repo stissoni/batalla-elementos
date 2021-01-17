@@ -79,7 +79,7 @@ int Diccionario::largo() {
     return cantidad_nodos;
 }
 
-Valor Diccionario::buscar(Clave clave) {
+Valor Diccionario::consulta(Clave clave) {
     if (!esta_clave(clave)){
         cout << ERROR_CLAVE_NO_ENCONTRADA << endl;
     }
@@ -155,17 +155,16 @@ void Diccionario::sucesor(Nodo* raiz, Nodo*& suc, Key clave) { // revisar el *& 
  */   
 
 
-void Diccionario::baja(Clave clave) {
+/*void Diccionario::baja(Clave clave) { //este es el baja que no devuelve
     if(esta_clave(clave)) {
         Nodo* act = raiz;
         _baja(act, clave);
     } else {
         cout << ERROR_CLAVE_NO_ENCONTRADA << endl;
     }
-}
+}*/
     
-    
-Nodo* Diccionario::_baja(Nodo* act, Clave clave){
+/*Nodo* Diccionario::_baja(Nodo* act, Clave clave){
     if(!act) return act;
     else if(clave < act->obtener_clave()) act->obtener_izq() = _baja(act->obtener_izq(), clave);
     else if(clave > act->obtener_clave)) act->obtener_der() = _baja(act->obtener_der(), clave);
@@ -187,13 +186,49 @@ Nodo* Diccionario::_baja(Nodo* act, Clave clave){
             act->obtener_der() = _baja(act->obtener_der(), aux->obtener_clave());
         }
 }
+*/
+    
+Valor Diccionario::baja(Clave clave) {
+    Nodo* act = 0;
+    if(esta_clave(clave)) {
+        act = raiz;
+        Valor dato = consulta(clave);
+        _baja(act, clave);
+        return dato;
+    }
+    return act;
+}
+    
+    
+Valor Diccionario::_baja(Nodo* act, Clave clave){
+    if(!act) return act;
+    else if(clave < act->obtener_clave()) act->obtener_izq() = _baja(act->obtener_izq(), clave);
+    else if(clave > act->obtener_clave)) act->obtener_der() = _baja(act->obtener_der(), clave);
+    else { // acá lo encontró
+        if(!act->obtener_izq() && !act->obtener_der()) { // acá es hoja
+            delete act;
+            act = 0;
+        } else if(!act->obtener_izq()) { // solo hijo derecho
+            Nodo* aux = act;
+            act = act->obtener_der();
+            delete aux;
+        } else if(!act->obtener_der()) { // solo hijo izquierdo
+            Nodo* aux = act;
+            act = act->obtener_izq();
+            delete aux;
+        } else { // tiene 2 hijos
+            Nodo* aux = buscar_min(act->obtener_der());
+            act->copiar_nodo(aux);
+            act->obtener_der() = _baja(act->obtener_der(), aux->obtener_clave());
+        }
+}
     
     
 void imprimir_inorden(Nodo* raiz) {
     // recorrido inorden: subarbol izquierdo - raiz - subarbol derecho
     if (raiz != 0) { // caso base: raiz = 0, subarbol vacio, corta la recursividad
         imprimir_inorden(raiz->obtener_izq()); 
-        cout << raiz->obtener_clave << " "; // imprime solo la clave? 
+        cout << raiz->obtener_clave() << " ";
         imprimir_inorden(raiz->obtener_der());
     }
 }

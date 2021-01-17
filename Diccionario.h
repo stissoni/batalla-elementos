@@ -36,8 +36,8 @@ public:
     // Recorre el diccionario en busca de la clave, devuelve true si la encuentra, sino devuelve false.
     bool esta_clave(Clave clave);
     
-    // Devuelve true si el diccionario esta vacio, false de lo contrario.
-    bool vacio();
+    // Imprime las claves (y valores?) del diccionario, siguiendo recorrido inorden 
+    void imprimir_inorden(Nodo* raiz);
     
     // Se inserta una entrada en el diccionario. La entrada esta compuesta por un par clave: string y valor: puntero a Personaje.
     void insertar_dato(Clave clave, Valor valor);
@@ -47,7 +47,9 @@ public:
     
     // Encuentra el sucesor del nodo que contiene la clave pasada por parametro
     void sucesor(Nodo* raiz, Nodo*& suc, Clave clave);
-
+    
+    // Devuelve true si el diccionario esta vacio, false de lo contrario.
+    bool vacio();
 
     // Destructor
     virtual ~Diccionario();

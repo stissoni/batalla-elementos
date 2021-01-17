@@ -228,7 +228,7 @@ void imprimir_inorden(Nodo* raiz) {
     // recorrido inorden: subarbol izquierdo - raiz - subarbol derecho
     if (raiz != 0) { // caso base: raiz = 0, subarbol vacio, corta la recursividad
         imprimir_inorden(raiz->obtener_izq()); 
-        cout << raiz->obtener_clave() << " ";
+        cout << raiz->obtener_clave() << endl;
         imprimir_inorden(raiz->obtener_der());
     }
 }

@@ -2,7 +2,7 @@
 // Created by santi on 10/1/2021.
 //
 
-#include "Nodo.h"
+#include "nodo.h"
 #include <string>
 
 Nodo::Nodo(Clave clave, Valor valor) {

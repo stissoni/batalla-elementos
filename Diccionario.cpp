@@ -195,4 +195,5 @@ void imprimir_inorden(Nodo* raiz) {
         imprimir_inorden(raiz->obtener_izq()); 
         cout << raiz->obtener_clave << " "; // imprime solo la clave? 
         imprimir_inorden(raiz->obtener_der());
+    }
 }

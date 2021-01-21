@@ -1,8 +1,5 @@
-|//
-// Created by santi on 10/1/2021.
-//
 
-#include "nodo.h"
+#include "Nodo.h"
 #include <string>
 
 Nodo::Nodo(Clave clave, Valor valor) {
@@ -21,6 +18,14 @@ void Nodo::insertar_padre(Nodo* padre) {
     this->padre = padre;
 }
 
+void Nodo::cambiar_izq(Nodo* nuevo) {
+    this->izq = 0;
+}
+
+void Nodo::cambiar_der(Nodo* nuevo) {
+    this->der = 0;
+}
+
 //void Nodo::cambiar_dato(Value valor) {
 //    this->valor = valor;
 //}
@@ -31,7 +36,7 @@ void Nodo::insertar_izq(Nodo* izq) {
 }
 
 Nodo* Nodo::obtener_der() {
-    return der->der;
+    return this->der;
 }
 
 void Nodo::insertar_der(Nodo* der) {
@@ -66,4 +71,3 @@ void Nodo::copiar_nodo(Nodo* n) {
     this->clave = n->clave;
     this->valor = n->valor;
 }
-

@@ -3,16 +3,17 @@
 Menu::Menu() {
     personajes = 0;
     esta_activo = false;
-    juego();
 }
 
-Menu::~Menu() {
+/*Menu::~Menu() {
     while(!personajes->vacio()) {
-        Personaje* eliminado = personajes->baja(); # baja y devuelve el primer personaje
+        Personaje* eliminado = personajes->baja();
         delete eliminado;
     }
     delete personajes;
-}
+}*/
+
+Menu::~Menu() {}
 
 void Menu::cargar_personajes(string archivo) {
     personajes = new Diccionario();
@@ -60,7 +61,7 @@ void Menu::agregar_nuevo_personaje() {
     cargar_personaje_segun_elemento(elemento, nombre);
 }
 
-void Menu::eliminar_personaje() {
+/*void Menu::eliminar_personaje() {
     if(!personajes->vacio()) {
         string nombre = pedir_nombre_personaje();
         Personaje* eliminado = personajes->baja(nombre);
@@ -71,11 +72,11 @@ void Menu::eliminar_personaje() {
     } else {
         cout << ERROR_DICCIONARIO_VACIO << endl;
     }
-}
+}*/
 
 void Menu::mostrar_nombres_personajes() {
     if(!personajes->vacio())
-        personajes->imprimir_claves_ordenadas(); # print_in_order o algo de eso
+        personajes->imprimir_inorden(personajes->obtener_raiz());
     else cout << ERROR_DICCIONARIO_VACIO << endl;
 }
 
@@ -124,18 +125,18 @@ void Menu::interfaz() {
             case 1:
                 agregar_nuevo_personaje();
                 break;
-            case 2:
+            /*case 2:
                 eliminar_personaje();
-                break;
+                break;*/
             case 3:
                 mostrar_nombres_personajes();
                 break;
             case 4:
                 detalles_personaje();
                 break;
-            case 5:
+            /*case 5:
                 comenzar_juego();
-                break;
+                break;*/
             case 6:
                 salir();
                 break;
@@ -143,7 +144,7 @@ void Menu::interfaz() {
     }
 }
 
-void Menu::comenzar_juego() {
+/*void Menu::comenzar_juego() {
     while(esta_activo && !juego.comenzo()){
         mostrar_opciones_submenu();
         int opcion = pedir_opcion();
@@ -165,8 +166,8 @@ void Menu::comenzar_juego() {
     }
     if(juego.comenzo()) juego.jugar();
 }
-
-void Menu::seleccionar_personaje() {
+*/
+/*void Menu::seleccionar_personaje() {
     string nombre = pedir_nombre_personaje();
     if(!personajes->vacio()) {
         Personaje* solicitado = personajes->consulta(nombre);
@@ -183,12 +184,12 @@ void Menu::seleccionar_personaje() {
         cout << ERROR_DICCIONARIO_VACIO << endl;
     }
 }
-    
-void Menu::determinar_turno_seleccion() {
+*/
+/*void Menu::determinar_turno_seleccion() {
     if(turno_seleccion % 2 == 0) return JUGADOR_1;
     else return JUGADOR_2;
 }
-
+*/
 
 
 void Menu::mostrar_opciones() {

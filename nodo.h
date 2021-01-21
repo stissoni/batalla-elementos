@@ -1,9 +1,5 @@
-//
-// Created by santi on 10/1/2021.
-//
-
-#ifndef TP2_BATALLA_ELEMENTOS_NODO_ABB_H
-#define TP2_BATALLA_ELEMENTOS_NODO_ABB_H
+#ifndef NODO_H_INCLUDED
+#define NODO_H_INCLUDED
 
 #include <string>
 #include "personaje.h"
@@ -22,6 +18,7 @@ private:
     Clave clave;
 public:
     explicit Nodo(Clave clave, Valor valor);
+    void copiar_nodo(Nodo* n);
     bool es_hoja();
     void insertar_der(Nodo* der);
     void insertar_izq(Nodo* izq);
@@ -33,8 +30,10 @@ public:
     Valor obtener_valor();
     bool solo_hijo_der();
     bool solo_hijo_izq();
+    void cambiar_der(Nodo* nuevo);
+    void cambiar_izq(Nodo* nuevo);
 
 };
 
 
-#endif //TP2_BATALLA_ELEMENTOS_NODO_ABB_H
+#endif // NODO_H_INCLUDED

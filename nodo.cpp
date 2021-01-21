@@ -3,8 +3,9 @@
 #include <string>
 
 Nodo::Nodo(Clave clave, Valor valor) {
-    izq = nullptr;
-    der = nullptr;
+    padre = 0;
+    izq = 0;
+    der = 0;
     this->clave = clave;
     this->valor = valor;
 }

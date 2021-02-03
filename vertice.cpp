@@ -6,14 +6,14 @@ Vertice::Vertice(Coordenada coordenadas, ListaAdyacencia lista, Casillero* casil
     this->casillero = casillero;
 }
 
-Coordenada obtener_coordenadas() {
+Coordenada Vertice::obtener_coordenadas() {
     return coordenadas;
 }
 
-ListaAdyacencia obtener_lista() {
+ListaAdyacencia Vertice::obtener_lista() {
     return lista;
 }
 
-Casillero* obtener_casillero() {
+Casillero* Vertice::obtener_casillero() {
     return casillero;
 }

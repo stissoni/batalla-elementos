@@ -1,6 +1,5 @@
 #include "arista.h"
 
-
 Arista::Arista(Vertice origen, Vertice destino, int costo) {
 	this->origen = origen;
 	this->destino = destino;

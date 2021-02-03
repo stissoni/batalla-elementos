@@ -6,13 +6,18 @@ CMakeFiles/batalla_elementos.dir/DIccionario.cpp.obj: ../Diccionario.h
 CMakeFiles/batalla_elementos.dir/DIccionario.cpp.obj: ../Nodo.h
 CMakeFiles/batalla_elementos.dir/DIccionario.cpp.obj: ../personaje.h
 
+CMakeFiles/batalla_elementos.dir/ListaAdyacencia.cpp.obj: ../ListaAdyacencia.cpp
+CMakeFiles/batalla_elementos.dir/ListaAdyacencia.cpp.obj: ../ListaAdyacencia.h
+
 CMakeFiles/batalla_elementos.dir/Nodo.cpp.obj: ../Nodo.cpp
 CMakeFiles/batalla_elementos.dir/Nodo.cpp.obj: ../Nodo.h
 CMakeFiles/batalla_elementos.dir/Nodo.cpp.obj: ../personaje.h
 
+CMakeFiles/batalla_elementos.dir/arista.cpp.obj: ../ListaAdyacencia.h
 CMakeFiles/batalla_elementos.dir/arista.cpp.obj: ../arista.cpp
 CMakeFiles/batalla_elementos.dir/arista.cpp.obj: ../arista.h
 CMakeFiles/batalla_elementos.dir/arista.cpp.obj: ../casillero.h
+CMakeFiles/batalla_elementos.dir/arista.cpp.obj: ../coordenada.h
 CMakeFiles/batalla_elementos.dir/arista.cpp.obj: ../personaje.h
 CMakeFiles/batalla_elementos.dir/arista.cpp.obj: ../personaje_de_agua.h
 CMakeFiles/batalla_elementos.dir/arista.cpp.obj: ../personaje_de_aire.h
@@ -36,6 +41,9 @@ CMakeFiles/batalla_elementos.dir/casillero.cpp.obj: ../personaje_de_agua.h
 CMakeFiles/batalla_elementos.dir/casillero.cpp.obj: ../personaje_de_aire.h
 CMakeFiles/batalla_elementos.dir/casillero.cpp.obj: ../personaje_de_fuego.h
 CMakeFiles/batalla_elementos.dir/casillero.cpp.obj: ../personaje_de_tierra.h
+
+CMakeFiles/batalla_elementos.dir/coordenada.cpp.obj: ../coordenada.cpp
+CMakeFiles/batalla_elementos.dir/coordenada.cpp.obj: ../coordenada.h
 
 CMakeFiles/batalla_elementos.dir/lago.cpp.obj: ../casillero.h
 CMakeFiles/batalla_elementos.dir/lago.cpp.obj: ../lago.cpp
@@ -112,7 +120,9 @@ CMakeFiles/batalla_elementos.dir/vacio.cpp.obj: ../personaje_de_tierra.h
 CMakeFiles/batalla_elementos.dir/vacio.cpp.obj: ../vacio.cpp
 CMakeFiles/batalla_elementos.dir/vacio.cpp.obj: ../vacio.h
 
+CMakeFiles/batalla_elementos.dir/vertice.cpp.obj: ../ListaAdyacencia.h
 CMakeFiles/batalla_elementos.dir/vertice.cpp.obj: ../casillero.h
+CMakeFiles/batalla_elementos.dir/vertice.cpp.obj: ../coordenada.h
 CMakeFiles/batalla_elementos.dir/vertice.cpp.obj: ../personaje.h
 CMakeFiles/batalla_elementos.dir/vertice.cpp.obj: ../personaje_de_agua.h
 CMakeFiles/batalla_elementos.dir/vertice.cpp.obj: ../personaje_de_aire.h

@@ -1,9 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/batalla_elementos.dir/DIccionario.cpp.obj"
+  "CMakeFiles/batalla_elementos.dir/ListaAdyacencia.cpp.obj"
   "CMakeFiles/batalla_elementos.dir/Nodo.cpp.obj"
   "CMakeFiles/batalla_elementos.dir/arista.cpp.obj"
   "CMakeFiles/batalla_elementos.dir/camino.cpp.obj"
   "CMakeFiles/batalla_elementos.dir/casillero.cpp.obj"
+  "CMakeFiles/batalla_elementos.dir/coordenada.cpp.obj"
   "CMakeFiles/batalla_elementos.dir/lago.cpp.obj"
   "CMakeFiles/batalla_elementos.dir/main.cpp.obj"
   "CMakeFiles/batalla_elementos.dir/menu.cpp.obj"

@@ -5,10 +5,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/santi/batalla-elementos/DIccionario.cpp" "C:/Users/santi/batalla-elementos/cmake-build-debug/CMakeFiles/batalla_elementos.dir/DIccionario.cpp.obj"
+  "C:/Users/santi/batalla-elementos/ListaAdyacencia.cpp" "C:/Users/santi/batalla-elementos/cmake-build-debug/CMakeFiles/batalla_elementos.dir/ListaAdyacencia.cpp.obj"
   "C:/Users/santi/batalla-elementos/Nodo.cpp" "C:/Users/santi/batalla-elementos/cmake-build-debug/CMakeFiles/batalla_elementos.dir/Nodo.cpp.obj"
   "C:/Users/santi/batalla-elementos/arista.cpp" "C:/Users/santi/batalla-elementos/cmake-build-debug/CMakeFiles/batalla_elementos.dir/arista.cpp.obj"
   "C:/Users/santi/batalla-elementos/camino.cpp" "C:/Users/santi/batalla-elementos/cmake-build-debug/CMakeFiles/batalla_elementos.dir/camino.cpp.obj"
   "C:/Users/santi/batalla-elementos/casillero.cpp" "C:/Users/santi/batalla-elementos/cmake-build-debug/CMakeFiles/batalla_elementos.dir/casillero.cpp.obj"
+  "C:/Users/santi/batalla-elementos/coordenada.cpp" "C:/Users/santi/batalla-elementos/cmake-build-debug/CMakeFiles/batalla_elementos.dir/coordenada.cpp.obj"
   "C:/Users/santi/batalla-elementos/lago.cpp" "C:/Users/santi/batalla-elementos/cmake-build-debug/CMakeFiles/batalla_elementos.dir/lago.cpp.obj"
   "C:/Users/santi/batalla-elementos/main.cpp" "C:/Users/santi/batalla-elementos/cmake-build-debug/CMakeFiles/batalla_elementos.dir/main.cpp.obj"
   "C:/Users/santi/batalla-elementos/menu.cpp" "C:/Users/santi/batalla-elementos/cmake-build-debug/CMakeFiles/batalla_elementos.dir/menu.cpp.obj"

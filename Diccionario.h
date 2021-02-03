@@ -2,9 +2,7 @@
 #define TP2_BATALLA_ELEMENTOS_ARBOL_H
 
 #include "Nodo.h"
-#include <string.h>
-
-const string ERROR_CLAVE_NO_ENCONTRADA = "La clave no se encuentra en el diccionario";
+#include <string>
 
 class Diccionario {
 private:
@@ -36,13 +34,7 @@ public:
     // Imprime las claves del diccionario, siguiendo recorrido inorden
     void imprimir_inorden(Nodo* aux);
 
-    // Se inserta una entrada en el diccionario. La entrada esta compuesta por un par clave: string y valor: puntero a Personaje.
-    void insertar_dato(Clave clave, Valor valor);
-
     Nodo* obtener_raiz();
-
-    // Encuentra el sucesor del nodo que contiene la clave pasada por parametro
-    void sucesor(Nodo* raiz, Nodo*& suc, Clave clave);
 
     // Devuelve true si el diccionario esta vacio, false de lo contrario.
     bool vacio();

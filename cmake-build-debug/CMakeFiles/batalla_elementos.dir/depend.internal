@@ -6,14 +6,19 @@ CMakeFiles/batalla_elementos.dir/DIccionario.cpp.obj
  C:/Users/santi/batalla-elementos/Diccionario.h
  C:/Users/santi/batalla-elementos/Nodo.h
  C:/Users/santi/batalla-elementos/personaje.h
+CMakeFiles/batalla_elementos.dir/ListaAdyacencia.cpp.obj
+ C:/Users/santi/batalla-elementos/ListaAdyacencia.cpp
+ C:/Users/santi/batalla-elementos/ListaAdyacencia.h
 CMakeFiles/batalla_elementos.dir/Nodo.cpp.obj
  C:/Users/santi/batalla-elementos/Nodo.cpp
  C:/Users/santi/batalla-elementos/Nodo.h
  C:/Users/santi/batalla-elementos/personaje.h
 CMakeFiles/batalla_elementos.dir/arista.cpp.obj
+ C:/Users/santi/batalla-elementos/ListaAdyacencia.h
  C:/Users/santi/batalla-elementos/arista.cpp
  C:/Users/santi/batalla-elementos/arista.h
  C:/Users/santi/batalla-elementos/casillero.h
+ C:/Users/santi/batalla-elementos/coordenada.h
  C:/Users/santi/batalla-elementos/personaje.h
  C:/Users/santi/batalla-elementos/personaje_de_agua.h
  C:/Users/santi/batalla-elementos/personaje_de_aire.h
@@ -37,6 +42,9 @@ CMakeFiles/batalla_elementos.dir/casillero.cpp.obj
  C:/Users/santi/batalla-elementos/personaje_de_aire.h
  C:/Users/santi/batalla-elementos/personaje_de_fuego.h
  C:/Users/santi/batalla-elementos/personaje_de_tierra.h
+CMakeFiles/batalla_elementos.dir/coordenada.cpp.obj
+ C:/Users/santi/batalla-elementos/coordenada.cpp
+ C:/Users/santi/batalla-elementos/coordenada.h
 CMakeFiles/batalla_elementos.dir/lago.cpp.obj
  C:/Users/santi/batalla-elementos/casillero.h
  C:/Users/santi/batalla-elementos/lago.cpp
@@ -113,7 +121,9 @@ CMakeFiles/batalla_elementos.dir/vacio.cpp.obj
  C:/Users/santi/batalla-elementos/vacio.cpp
  C:/Users/santi/batalla-elementos/vacio.h
 CMakeFiles/batalla_elementos.dir/vertice.cpp.obj
+ C:/Users/santi/batalla-elementos/ListaAdyacencia.h
  C:/Users/santi/batalla-elementos/casillero.h
+ C:/Users/santi/batalla-elementos/coordenada.h
  C:/Users/santi/batalla-elementos/personaje.h
  C:/Users/santi/batalla-elementos/personaje_de_agua.h
  C:/Users/santi/batalla-elementos/personaje_de_aire.h

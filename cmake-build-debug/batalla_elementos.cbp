@@ -89,6 +89,12 @@
 		<Unit filename="C:/Users/santi/batalla-elementos/Diccionario.h">
 			<Option target="batalla_elementos"/>
 		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/ListaAdyacencia.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/ListaAdyacencia.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
 		<Unit filename="C:/Users/santi/batalla-elementos/Nodo.cpp">
 			<Option target="batalla_elementos"/>
 		</Unit>
@@ -111,6 +117,12 @@
 			<Option target="batalla_elementos"/>
 		</Unit>
 		<Unit filename="C:/Users/santi/batalla-elementos/casillero.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/coordenada.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/coordenada.h">
 			<Option target="batalla_elementos"/>
 		</Unit>
 		<Unit filename="C:/Users/santi/batalla-elementos/juego.h">

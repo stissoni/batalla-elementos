@@ -169,6 +169,33 @@ DIccionario.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/DIccionario.cpp.s
 .PHONY : DIccionario.cpp.s
 
+ListaAdyacencia.obj: ListaAdyacencia.cpp.obj
+
+.PHONY : ListaAdyacencia.obj
+
+# target to build an object file
+ListaAdyacencia.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/ListaAdyacencia.cpp.obj
+.PHONY : ListaAdyacencia.cpp.obj
+
+ListaAdyacencia.i: ListaAdyacencia.cpp.i
+
+.PHONY : ListaAdyacencia.i
+
+# target to preprocess a source file
+ListaAdyacencia.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/ListaAdyacencia.cpp.i
+.PHONY : ListaAdyacencia.cpp.i
+
+ListaAdyacencia.s: ListaAdyacencia.cpp.s
+
+.PHONY : ListaAdyacencia.s
+
+# target to generate assembly for a file
+ListaAdyacencia.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/ListaAdyacencia.cpp.s
+.PHONY : ListaAdyacencia.cpp.s
+
 Nodo.obj: Nodo.cpp.obj
 
 .PHONY : Nodo.obj
@@ -276,6 +303,33 @@ casillero.s: casillero.cpp.s
 casillero.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/casillero.cpp.s
 .PHONY : casillero.cpp.s
+
+coordenada.obj: coordenada.cpp.obj
+
+.PHONY : coordenada.obj
+
+# target to build an object file
+coordenada.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/coordenada.cpp.obj
+.PHONY : coordenada.cpp.obj
+
+coordenada.i: coordenada.cpp.i
+
+.PHONY : coordenada.i
+
+# target to preprocess a source file
+coordenada.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/coordenada.cpp.i
+.PHONY : coordenada.cpp.i
+
+coordenada.s: coordenada.cpp.s
+
+.PHONY : coordenada.s
+
+# target to generate assembly for a file
+coordenada.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/coordenada.cpp.s
+.PHONY : coordenada.cpp.s
 
 lago.obj: lago.cpp.obj
 
@@ -640,6 +694,9 @@ help:
 	@echo ... DIccionario.obj
 	@echo ... DIccionario.i
 	@echo ... DIccionario.s
+	@echo ... ListaAdyacencia.obj
+	@echo ... ListaAdyacencia.i
+	@echo ... ListaAdyacencia.s
 	@echo ... Nodo.obj
 	@echo ... Nodo.i
 	@echo ... Nodo.s
@@ -652,6 +709,9 @@ help:
 	@echo ... casillero.obj
 	@echo ... casillero.i
 	@echo ... casillero.s
+	@echo ... coordenada.obj
+	@echo ... coordenada.i
+	@echo ... coordenada.s
 	@echo ... lago.obj
 	@echo ... lago.i
 	@echo ... lago.s

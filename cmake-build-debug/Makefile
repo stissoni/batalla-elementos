@@ -142,6 +142,168 @@ batalla_elementos/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/build
 .PHONY : batalla_elementos/fast
 
+DIccionario.obj: DIccionario.cpp.obj
+
+.PHONY : DIccionario.obj
+
+# target to build an object file
+DIccionario.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/DIccionario.cpp.obj
+.PHONY : DIccionario.cpp.obj
+
+DIccionario.i: DIccionario.cpp.i
+
+.PHONY : DIccionario.i
+
+# target to preprocess a source file
+DIccionario.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/DIccionario.cpp.i
+.PHONY : DIccionario.cpp.i
+
+DIccionario.s: DIccionario.cpp.s
+
+.PHONY : DIccionario.s
+
+# target to generate assembly for a file
+DIccionario.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/DIccionario.cpp.s
+.PHONY : DIccionario.cpp.s
+
+Nodo.obj: Nodo.cpp.obj
+
+.PHONY : Nodo.obj
+
+# target to build an object file
+Nodo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Nodo.cpp.obj
+.PHONY : Nodo.cpp.obj
+
+Nodo.i: Nodo.cpp.i
+
+.PHONY : Nodo.i
+
+# target to preprocess a source file
+Nodo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Nodo.cpp.i
+.PHONY : Nodo.cpp.i
+
+Nodo.s: Nodo.cpp.s
+
+.PHONY : Nodo.s
+
+# target to generate assembly for a file
+Nodo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Nodo.cpp.s
+.PHONY : Nodo.cpp.s
+
+arista.obj: arista.cpp.obj
+
+.PHONY : arista.obj
+
+# target to build an object file
+arista.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/arista.cpp.obj
+.PHONY : arista.cpp.obj
+
+arista.i: arista.cpp.i
+
+.PHONY : arista.i
+
+# target to preprocess a source file
+arista.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/arista.cpp.i
+.PHONY : arista.cpp.i
+
+arista.s: arista.cpp.s
+
+.PHONY : arista.s
+
+# target to generate assembly for a file
+arista.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/arista.cpp.s
+.PHONY : arista.cpp.s
+
+camino.obj: camino.cpp.obj
+
+.PHONY : camino.obj
+
+# target to build an object file
+camino.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/camino.cpp.obj
+.PHONY : camino.cpp.obj
+
+camino.i: camino.cpp.i
+
+.PHONY : camino.i
+
+# target to preprocess a source file
+camino.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/camino.cpp.i
+.PHONY : camino.cpp.i
+
+camino.s: camino.cpp.s
+
+.PHONY : camino.s
+
+# target to generate assembly for a file
+camino.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/camino.cpp.s
+.PHONY : camino.cpp.s
+
+casillero.obj: casillero.cpp.obj
+
+.PHONY : casillero.obj
+
+# target to build an object file
+casillero.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/casillero.cpp.obj
+.PHONY : casillero.cpp.obj
+
+casillero.i: casillero.cpp.i
+
+.PHONY : casillero.i
+
+# target to preprocess a source file
+casillero.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/casillero.cpp.i
+.PHONY : casillero.cpp.i
+
+casillero.s: casillero.cpp.s
+
+.PHONY : casillero.s
+
+# target to generate assembly for a file
+casillero.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/casillero.cpp.s
+.PHONY : casillero.cpp.s
+
+lago.obj: lago.cpp.obj
+
+.PHONY : lago.obj
+
+# target to build an object file
+lago.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/lago.cpp.obj
+.PHONY : lago.cpp.obj
+
+lago.i: lago.cpp.i
+
+.PHONY : lago.i
+
+# target to preprocess a source file
+lago.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/lago.cpp.i
+.PHONY : lago.cpp.i
+
+lago.s: lago.cpp.s
+
+.PHONY : lago.s
+
+# target to generate assembly for a file
+lago.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/lago.cpp.s
+.PHONY : lago.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -169,6 +331,303 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+menu.obj: menu.cpp.obj
+
+.PHONY : menu.obj
+
+# target to build an object file
+menu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/menu.cpp.obj
+.PHONY : menu.cpp.obj
+
+menu.i: menu.cpp.i
+
+.PHONY : menu.i
+
+# target to preprocess a source file
+menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/menu.cpp.i
+.PHONY : menu.cpp.i
+
+menu.s: menu.cpp.s
+
+.PHONY : menu.s
+
+# target to generate assembly for a file
+menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/menu.cpp.s
+.PHONY : menu.cpp.s
+
+montania.obj: montania.cpp.obj
+
+.PHONY : montania.obj
+
+# target to build an object file
+montania.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/montania.cpp.obj
+.PHONY : montania.cpp.obj
+
+montania.i: montania.cpp.i
+
+.PHONY : montania.i
+
+# target to preprocess a source file
+montania.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/montania.cpp.i
+.PHONY : montania.cpp.i
+
+montania.s: montania.cpp.s
+
+.PHONY : montania.s
+
+# target to generate assembly for a file
+montania.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/montania.cpp.s
+.PHONY : montania.cpp.s
+
+personaje.obj: personaje.cpp.obj
+
+.PHONY : personaje.obj
+
+# target to build an object file
+personaje.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/personaje.cpp.obj
+.PHONY : personaje.cpp.obj
+
+personaje.i: personaje.cpp.i
+
+.PHONY : personaje.i
+
+# target to preprocess a source file
+personaje.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/personaje.cpp.i
+.PHONY : personaje.cpp.i
+
+personaje.s: personaje.cpp.s
+
+.PHONY : personaje.s
+
+# target to generate assembly for a file
+personaje.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/personaje.cpp.s
+.PHONY : personaje.cpp.s
+
+personaje_de_agua.obj: personaje_de_agua.cpp.obj
+
+.PHONY : personaje_de_agua.obj
+
+# target to build an object file
+personaje_de_agua.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/personaje_de_agua.cpp.obj
+.PHONY : personaje_de_agua.cpp.obj
+
+personaje_de_agua.i: personaje_de_agua.cpp.i
+
+.PHONY : personaje_de_agua.i
+
+# target to preprocess a source file
+personaje_de_agua.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/personaje_de_agua.cpp.i
+.PHONY : personaje_de_agua.cpp.i
+
+personaje_de_agua.s: personaje_de_agua.cpp.s
+
+.PHONY : personaje_de_agua.s
+
+# target to generate assembly for a file
+personaje_de_agua.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/personaje_de_agua.cpp.s
+.PHONY : personaje_de_agua.cpp.s
+
+personaje_de_aire.obj: personaje_de_aire.cpp.obj
+
+.PHONY : personaje_de_aire.obj
+
+# target to build an object file
+personaje_de_aire.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/personaje_de_aire.cpp.obj
+.PHONY : personaje_de_aire.cpp.obj
+
+personaje_de_aire.i: personaje_de_aire.cpp.i
+
+.PHONY : personaje_de_aire.i
+
+# target to preprocess a source file
+personaje_de_aire.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/personaje_de_aire.cpp.i
+.PHONY : personaje_de_aire.cpp.i
+
+personaje_de_aire.s: personaje_de_aire.cpp.s
+
+.PHONY : personaje_de_aire.s
+
+# target to generate assembly for a file
+personaje_de_aire.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/personaje_de_aire.cpp.s
+.PHONY : personaje_de_aire.cpp.s
+
+personaje_de_fuego.obj: personaje_de_fuego.cpp.obj
+
+.PHONY : personaje_de_fuego.obj
+
+# target to build an object file
+personaje_de_fuego.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/personaje_de_fuego.cpp.obj
+.PHONY : personaje_de_fuego.cpp.obj
+
+personaje_de_fuego.i: personaje_de_fuego.cpp.i
+
+.PHONY : personaje_de_fuego.i
+
+# target to preprocess a source file
+personaje_de_fuego.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/personaje_de_fuego.cpp.i
+.PHONY : personaje_de_fuego.cpp.i
+
+personaje_de_fuego.s: personaje_de_fuego.cpp.s
+
+.PHONY : personaje_de_fuego.s
+
+# target to generate assembly for a file
+personaje_de_fuego.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/personaje_de_fuego.cpp.s
+.PHONY : personaje_de_fuego.cpp.s
+
+personaje_de_tierra.obj: personaje_de_tierra.cpp.obj
+
+.PHONY : personaje_de_tierra.obj
+
+# target to build an object file
+personaje_de_tierra.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/personaje_de_tierra.cpp.obj
+.PHONY : personaje_de_tierra.cpp.obj
+
+personaje_de_tierra.i: personaje_de_tierra.cpp.i
+
+.PHONY : personaje_de_tierra.i
+
+# target to preprocess a source file
+personaje_de_tierra.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/personaje_de_tierra.cpp.i
+.PHONY : personaje_de_tierra.cpp.i
+
+personaje_de_tierra.s: personaje_de_tierra.cpp.s
+
+.PHONY : personaje_de_tierra.s
+
+# target to generate assembly for a file
+personaje_de_tierra.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/personaje_de_tierra.cpp.s
+.PHONY : personaje_de_tierra.cpp.s
+
+precipicio.obj: precipicio.cpp.obj
+
+.PHONY : precipicio.obj
+
+# target to build an object file
+precipicio.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/precipicio.cpp.obj
+.PHONY : precipicio.cpp.obj
+
+precipicio.i: precipicio.cpp.i
+
+.PHONY : precipicio.i
+
+# target to preprocess a source file
+precipicio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/precipicio.cpp.i
+.PHONY : precipicio.cpp.i
+
+precipicio.s: precipicio.cpp.s
+
+.PHONY : precipicio.s
+
+# target to generate assembly for a file
+precipicio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/precipicio.cpp.s
+.PHONY : precipicio.cpp.s
+
+vacio.obj: vacio.cpp.obj
+
+.PHONY : vacio.obj
+
+# target to build an object file
+vacio.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/vacio.cpp.obj
+.PHONY : vacio.cpp.obj
+
+vacio.i: vacio.cpp.i
+
+.PHONY : vacio.i
+
+# target to preprocess a source file
+vacio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/vacio.cpp.i
+.PHONY : vacio.cpp.i
+
+vacio.s: vacio.cpp.s
+
+.PHONY : vacio.s
+
+# target to generate assembly for a file
+vacio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/vacio.cpp.s
+.PHONY : vacio.cpp.s
+
+vertice.obj: vertice.cpp.obj
+
+.PHONY : vertice.obj
+
+# target to build an object file
+vertice.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/vertice.cpp.obj
+.PHONY : vertice.cpp.obj
+
+vertice.i: vertice.cpp.i
+
+.PHONY : vertice.i
+
+# target to preprocess a source file
+vertice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/vertice.cpp.i
+.PHONY : vertice.cpp.i
+
+vertice.s: vertice.cpp.s
+
+.PHONY : vertice.s
+
+# target to generate assembly for a file
+vertice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/vertice.cpp.s
+.PHONY : vertice.cpp.s
+
+volcan.obj: volcan.cpp.obj
+
+.PHONY : volcan.obj
+
+# target to build an object file
+volcan.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/volcan.cpp.obj
+.PHONY : volcan.cpp.obj
+
+volcan.i: volcan.cpp.i
+
+.PHONY : volcan.i
+
+# target to preprocess a source file
+volcan.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/volcan.cpp.i
+.PHONY : volcan.cpp.i
+
+volcan.s: volcan.cpp.s
+
+.PHONY : volcan.s
+
+# target to generate assembly for a file
+volcan.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/volcan.cpp.s
+.PHONY : volcan.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -178,9 +637,60 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... batalla_elementos
+	@echo ... DIccionario.obj
+	@echo ... DIccionario.i
+	@echo ... DIccionario.s
+	@echo ... Nodo.obj
+	@echo ... Nodo.i
+	@echo ... Nodo.s
+	@echo ... arista.obj
+	@echo ... arista.i
+	@echo ... arista.s
+	@echo ... camino.obj
+	@echo ... camino.i
+	@echo ... camino.s
+	@echo ... casillero.obj
+	@echo ... casillero.i
+	@echo ... casillero.s
+	@echo ... lago.obj
+	@echo ... lago.i
+	@echo ... lago.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... menu.obj
+	@echo ... menu.i
+	@echo ... menu.s
+	@echo ... montania.obj
+	@echo ... montania.i
+	@echo ... montania.s
+	@echo ... personaje.obj
+	@echo ... personaje.i
+	@echo ... personaje.s
+	@echo ... personaje_de_agua.obj
+	@echo ... personaje_de_agua.i
+	@echo ... personaje_de_agua.s
+	@echo ... personaje_de_aire.obj
+	@echo ... personaje_de_aire.i
+	@echo ... personaje_de_aire.s
+	@echo ... personaje_de_fuego.obj
+	@echo ... personaje_de_fuego.i
+	@echo ... personaje_de_fuego.s
+	@echo ... personaje_de_tierra.obj
+	@echo ... personaje_de_tierra.i
+	@echo ... personaje_de_tierra.s
+	@echo ... precipicio.obj
+	@echo ... precipicio.i
+	@echo ... precipicio.s
+	@echo ... vacio.obj
+	@echo ... vacio.i
+	@echo ... vacio.s
+	@echo ... vertice.obj
+	@echo ... vertice.i
+	@echo ... vertice.s
+	@echo ... volcan.obj
+	@echo ... volcan.i
+	@echo ... volcan.s
 .PHONY : help
 
 

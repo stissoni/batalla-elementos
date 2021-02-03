@@ -80,7 +80,115 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/santi/batalla-elementos/DIccionario.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/DIccionario.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/Diccionario.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/Nodo.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/Nodo.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/arista.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/arista.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/camino.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/camino.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/casillero.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/casillero.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/juego.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/lago.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/lago.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
 		<Unit filename="C:/Users/santi/batalla-elementos/main.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/menu.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/menu.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/montania.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/montania.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/personaje.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/personaje.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/personaje_de_agua.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/personaje_de_agua.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/personaje_de_aire.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/personaje_de_aire.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/personaje_de_fuego.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/personaje_de_fuego.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/personaje_de_tierra.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/personaje_de_tierra.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/precipicio.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/precipicio.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/vacio.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/vacio.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/vertice.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/vertice.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/volcan.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/volcan.h">
 			<Option target="batalla_elementos"/>
 		</Unit>
 		<Unit filename="C:/Users/santi/batalla-elementos/CMakeLists.txt">

@@ -2,29 +2,25 @@
 #include "Nodo.h"
 #include <string>
 
-Nodo::Nodo(Clave clave, Valor valor) {
-    padre = 0;
-    izq = 0;
-    der = 0;
+Nodo::Nodo(Clave clave, Valor valor, Nodo* padre) {
+    izq = nullptr;
+    der = nullptr;
+    this->padre = padre;
     this->clave = clave;
     this->valor = valor;
 }
 
 Clave Nodo::obtener_clave() {
-    return clave;
+    return this->clave;
+}
+
+void Nodo::asignar_clave(Clave clave) {
+    this->clave = clave;
 }
 
 
 void Nodo::insertar_padre(Nodo* padre) {
     this->padre = padre;
-}
-
-void Nodo::cambiar_izq(Nodo* nuevo) {
-    this->izq = 0;
-}
-
-void Nodo::cambiar_der(Nodo* nuevo) {
-    this->der = 0;
 }
 
 //void Nodo::cambiar_dato(Value valor) {
@@ -69,6 +65,9 @@ Valor Nodo::obtener_valor() {
 }
 
 void Nodo::copiar_nodo(Nodo* n) {
-    this->clave = n->clave;
-    this->valor = n->valor;
+    this->izq = n->obtener_izq();
+    this->der = n->obtener_izq();
+    this->padre = n->obtener_padre();
+    this->clave = n->obtener_clave();
+    this->valor = n->obtener_valor();
 }

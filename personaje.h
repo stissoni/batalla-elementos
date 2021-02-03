@@ -74,7 +74,10 @@ public:
     */
     virtual void alimentar() = 0;
 
-private:
+    bool esta_vivo();
+
+    void restar_energia(int costo_energia);
+
     /*
     Devuelve el elemento del personaje
     */

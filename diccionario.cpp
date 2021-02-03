@@ -5,9 +5,10 @@ using namespace std;
 
 Diccionario::Diccionario() {
     raiz = 0;
+    actual = raiz;
 }
 
-void Diccionario::alta(Clave clave, Valor valor) {
+/*void Diccionario::alta(Clave clave, Valor valor) {
     Nodo* nodo_nuevo = new Nodo(clave, valor);
     Nodo* aux = raiz;
     Nodo* anterior;
@@ -37,14 +38,76 @@ void Diccionario::alta(Clave clave, Valor valor) {
         }
     }
 }
+*/
+
+
+/*
+ * Paul says: pone el Diccionario:: antes del tipo de return porque
+ * el nodo no es conocido por el abb y que tiene que saber que viene
+ * definido en la clase abb boEE re parafraseado, ante la duda min 7.10 del siguiente
+ * video https://www.youtube.com/watch?v=3FPjmO3-6IY&list=PLTxllHdfUq4d-DE16EDkpeb8Z68DU7Z_Q&index=5&ab_channel=PaulProgramming
+ * ahre largo el link. Esto hay que chequearlo, yo lo probaria sin el Diccionario::
+ * adelante del return type porque uno nunca sabe npi que flasheo ahi Paul
+ * but he's Paul, he must be right. Btw su implementacion de nodo es un humilde
+ * struct, capaz tiene algo que ver con eso. Probalo sin el coso adelante del tipo de retorno.
+ */
+
+
+
+void Diccionario::alta(Clave clave, Valor valor) {
+    actual = raiz;
+    if(!esta_clave(clave)) {
+        _alta(clave, valor, raiz, 0);
+    } else cout << "La clave ya existe en el diccionario" << endl;
+}
+
+void Diccionario::_alta(Clave clave, Valor valor, Nodo* nodo, Nodo* padre){
+    if(!nodo && !padre) {
+        raiz = new Nodo(clave, valor, padre);
+    } else if(nodo != raiz && padre -> es_hoja()) {
+        if(padre -> obtener_clave() > clave) {
+            padre -> insertar_izq(new Nodo(clave, valor, padre));
+        } else {
+            padre -> insertar_der(new Nodo(clave, valor, padre));
+        }
+    } else {
+        if(clave < nodo -> obtener_clave()) {
+            _alta(clave, valor, nodo -> obtener_izq(), nodo);
+        } else {
+            _alta(clave, valor, nodo -> obtener_der(), nodo);
+        }
+    }
+}
 
 bool Diccionario::esta_clave(Clave clave) {
+    actual = raiz;
+    return _esta_clave(raiz, clave);
+}
+
+bool Diccionario::_esta_clave(Nodo* n, Clave clave) {
+    bool encontrado = false;
+    if(n) {
+       if(n->obtener_clave() == clave) {
+           encontrado = true;
+           actual = n;
+       } else if(clave < n->obtener_clave()) {
+           return _esta_clave(n->obtener_izq(), clave);
+       } else {
+           return _esta_clave(n->obtener_der(), clave);
+       }
+    }
+    return encontrado;
+}
+
+
+/*bool Diccionario::esta_clave(Clave clave) {
     bool encontrado = false;
     if(raiz) {
         Nodo * aux = raiz;
         while (aux && !encontrado) {
             if(clave == aux->obtener_clave()) {
                 encontrado = true;
+                actual = aux;
             }
             else if(clave.compare(aux->obtener_clave()) < 0) {
                 aux = aux->obtener_izq();
@@ -54,7 +117,7 @@ bool Diccionario::esta_clave(Clave clave) {
         }
     }
     return encontrado;
-}
+}*/
 
 
 bool Diccionario::es_raiz() {
@@ -69,36 +132,31 @@ bool Diccionario::vacio() {
 Valor Diccionario::consulta(Clave clave) {
     Valor v = 0;
     if(esta_clave(clave)) {
-        Nodo* aux = raiz;
-        while(aux) {
-            if (clave == aux->obtener_clave()){
-                v = aux->obtener_valor();
-                return v;
-            } else if (clave.compare(aux->obtener_clave()) < 0){
-                aux = aux->obtener_izq();
-            } else {
-                aux = aux->obtener_der();
-            }
-        }
+        v = actual->obtener_valor();
     }
     return v;
 }
 
 Diccionario::~Diccionario() {
-    RemoveSubtree(raiz);
+    eliminar_subarbol(raiz); // va a borrar la raiz y todos los nodos abajo de esta, o sea todo el arbol lmao
 }
 
-void Diccionario::RemoveSubtree(Nodo* borrar) {
-    if(borrar) {
-       if(borrar->obtener_izq()) {
-            RemoveSubtree(borrar->obtener_izq());
-       }
-       if(borrar->obtener_der()) {
-            RemoveSubtree(borrar->obtener_der());
-       }
-       delete borrar;
+void Diccionario::eliminar_subarbol(Nodo* nodo) { // helper function
+    // si le pasas la raiz, borra la raiz y todo lo que esta abajo de la raiz
+    if (nodo) {
+        if (nodo->obtener_izq()) eliminar_subarbol(nodo->obtener_izq()); // vas hasta el final del subarbol izq
+        if (nodo->obtener_der()) eliminar_subarbol(nodo->obtener_der()); // vas hasta el final del subarbol der
     }
+    delete nodo;
 }
+
+/*
+ * I was pretty skeptical about this implementation pero aca el video
+ * de la demostracion de que funca me ilumino, hope it does
+ * the same to you
+ * https://www.youtube.com/watch?v=IOo7UJuKsHs&list=PLTxllHdfUq4d-DE16EDkpeb8Z68DU7Z_Q&index=16&ab_channel=PaulProgramming
+ * A la noche te paso mi CBU para que me deposites.
+ */
 
 /* CREO QUE NO LO USAMOS...
 void Diccionario::findSuccessor(Node* root, Node*& succ, int key)
@@ -130,9 +188,10 @@ void Diccionario::findSuccessor(Node* root, Node*& succ, int key)
 }
 */
 
-Nodo* Diccionario::buscar_min(Nodo* raiz) {
-    while(raiz->obtener_izq()) raiz = raiz->obtener_izq();
-    return raiz;
+Nodo* Diccionario::buscar_min(Nodo* n) {
+    if(!n) return 0;
+    if(n->obtener_izq()) return buscar_min(n->obtener_izq());
+    else return n;
 }
 
 /*  CREO QUE NO LO USAMOS...
@@ -218,11 +277,67 @@ Nodo* Diccionario::_baja(Clave clave){
 }
 */
 
-Valor Diccionario::baja(Clave clave) {
-	return _baja(clave, raiz);
+void Diccionario::baja(Clave clave) {
+    actual = raiz;
+    if(esta_clave(clave)) {
+        _baja(raiz, clave);
+    } else cout << "clave no encontrada" << endl;
 }
 
-Valor Diccionario::_baja(Clave clave, Nodo* padre) {
+void Diccionario::_baja(Nodo* n, Clave clave) {
+    if(!n) {
+        cout << "diccionario vacio" << endl;
+    } else if(clave < n->obtener_clave()) {
+        _baja(n->obtener_izq(), clave);
+    } else if(clave > n->obtener_clave()) {
+        _baja(n->obtener_der(), clave);
+    } else {
+        eliminar_nodo(n);
+    }
+}
+
+void Diccionario::reemplazar_nodo(Nodo* antiguo, Nodo* nuevo) {
+    if(antiguo->obtener_padre()) {
+        if(antiguo->obtener_clave() == antiguo->obtener_padre()->obtener_izq()->obtener_clave()) {
+            antiguo->obtener_padre()->insertar_izq(nuevo);
+
+        } else if(antiguo->obtener_clave() == antiguo->obtener_padre()->obtener_der()->obtener_clave()) {
+            antiguo->obtener_padre()->insertar_der(nuevo);
+        }
+    }
+    if(nuevo) {
+        nuevo->insertar_padre(antiguo->obtener_padre());
+    }
+}
+
+void Diccionario::eliminar_nodo(Nodo* eliminar) {
+    if(eliminar->obtener_izq() && eliminar->obtener_der()) {
+        Nodo* menor = buscar_min(eliminar->obtener_der());
+        eliminar->asignar_clave(menor->obtener_clave());
+        eliminar_nodo(menor);
+    } else if(eliminar->obtener_izq()) {
+        reemplazar_nodo(eliminar, eliminar->obtener_izq());
+        eliminar->insertar_der(0);
+        eliminar->insertar_izq(0);
+        delete eliminar;
+    } else if(eliminar->obtener_der()) {
+        reemplazar_nodo(eliminar, eliminar->obtener_der());
+        eliminar->insertar_der(0);
+        eliminar->insertar_izq(0);
+        delete eliminar;
+    } else {
+        reemplazar_nodo(eliminar, 0);
+        eliminar->insertar_der(0);
+        eliminar->insertar_izq(0);
+        delete eliminar;
+    }
+}
+
+/*Valor Diccionario::baja(Clave clave) {
+	return _baja(clave, raiz);
+}*/
+
+/*Valor Diccionario::_baja(Clave clave, Nodo* padre) {
     Valor v = 0;
 	if(raiz) {
 		if(raiz->obtener_clave() == clave) {
@@ -350,10 +465,14 @@ Valor Diccionario::baja_nodo(Nodo* padre, Nodo* nodo_borrar, bool izq) {
 		cout << "El arbol esta vacio" << endl;
 	}
 	return v;
-}
+}*/
 
 Nodo* Diccionario::obtener_raiz() {
     return raiz;
+}
+
+Clave Diccionario::obtener_clave_raiz() {
+    return raiz->obtener_clave();
 }
 
 void Diccionario::imprimir_inorden(Nodo* aux) {

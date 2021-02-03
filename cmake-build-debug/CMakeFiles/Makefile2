@@ -63,16 +63,16 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\santi\GitHub\batalla-elementos
+CMAKE_SOURCE_DIR = C:\Users\santi\CLionProjects\untitled
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\santi\GitHub\batalla-elementos\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\santi\CLionProjects\untitled\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/batalla_elementos.dir/all
+all: CMakeFiles/untitled.dir/all
 
 .PHONY : all
 
@@ -82,36 +82,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/batalla_elementos.dir/clean
+clean: CMakeFiles/untitled.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/batalla_elementos.dir
+# Target rules for target CMakeFiles/untitled.dir
 
 # All Build rule for target.
-CMakeFiles/batalla_elementos.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\santi\GitHub\batalla-elementos\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target batalla_elementos"
-.PHONY : CMakeFiles/batalla_elementos.dir/all
+CMakeFiles/untitled.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\santi\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target untitled"
+.PHONY : CMakeFiles/untitled.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/batalla_elementos.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\santi\GitHub\batalla-elementos\cmake-build-debug\CMakeFiles 12
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/batalla_elementos.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\santi\GitHub\batalla-elementos\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/batalla_elementos.dir/rule
+CMakeFiles/untitled.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\santi\CLionProjects\untitled\cmake-build-debug\CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/untitled.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\santi\CLionProjects\untitled\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/untitled.dir/rule
 
 # Convenience name for target.
-batalla_elementos: CMakeFiles/batalla_elementos.dir/rule
+untitled: CMakeFiles/untitled.dir/rule
 
-.PHONY : batalla_elementos
+.PHONY : untitled
 
 # clean rule for target.
-CMakeFiles/batalla_elementos.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/clean
-.PHONY : CMakeFiles/batalla_elementos.dir/clean
+CMakeFiles/untitled.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/clean
+.PHONY : CMakeFiles/untitled.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

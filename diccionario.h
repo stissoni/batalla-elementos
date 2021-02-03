@@ -9,6 +9,7 @@ const string ERROR_CLAVE_NO_ENCONTRADA = "La clave no se encuentra en el diccion
 class Diccionario {
 private:
     Nodo* raiz;
+    Nodo* actual;
 
 public:
     // Constructor.
@@ -18,7 +19,7 @@ public:
     void alta(Clave clave, Valor valor);
 
     // Elimina del diccionario el nodo que contiene la clave pasada por parametro. Decrementa cantidad_nodos en uno.
-    Valor baja(Clave clave);
+    void baja(Clave clave);
 
     // Encuentra el minimo valor en el diccionario.
     Nodo* buscar_min(Nodo* raiz);
@@ -49,11 +50,23 @@ public:
     // Destructor
     virtual ~Diccionario();
 
+    Clave obtener_clave_raiz();
+
+    Nodo* crear_nodo(Clave clave, Valor valor);
+
+
+    void _alta(Clave clave, Valor valor, Nodo* nodo, Nodo* padre);
+
+    void reemplazar_nodo(Nodo* antiguo, Nodo* nuevo);
+
+    void eliminar_nodo(Nodo* eliminar);
+
 private:
-    Valor _baja(Clave clave, Nodo* padre);
-    Valor baja_nodo(Nodo* padre, Nodo* nodo_borrar, bool izq);
-    Valor baja_raiz();
-    void RemoveSubtree(Nodo* borrar);
+    void _baja(Nodo* n, Clave clave);
+    //Valor baja_nodo(Nodo* padre, Nodo* nodo_borrar, bool izq);
+    //Valor baja_raiz();
+    void eliminar_subarbol(Nodo* borrar);
+    bool _esta_clave(Nodo* n, Clave clave);
 };
 
 #endif //TP2_BATALLA_ELEMENTOS_ARBOL_H

@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/santi/CLionProjects/untitled/montania.cpp
+montania.h
+C:/Users/santi/CLionProjects/untitled/montania.h
+
+C:/Users/santi/CLionProjects/untitled/montania.h
+

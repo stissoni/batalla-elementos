@@ -164,7 +164,7 @@ void Menu::interfaz() {
                 break;
         }
     }
-    if(juego.comenzo()) juego.jugar();
+    if(juego.comenzo()) menu_juego.jugar();
 }
 */
 /*void Menu::seleccionar_personaje() {

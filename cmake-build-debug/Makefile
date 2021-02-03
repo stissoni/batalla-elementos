@@ -67,10 +67,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\santi\GitHub\batalla-elementos
+CMAKE_SOURCE_DIR = C:\Users\santi\CLionProjects\untitled
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\santi\GitHub\batalla-elementos\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\santi\CLionProjects\untitled\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\santi\GitHub\batalla-elementos\cmake-build-debug\CMakeFiles C:\Users\santi\GitHub\batalla-elementos\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\santi\CLionProjects\untitled\cmake-build-debug\CMakeFiles C:\Users\santi\CLionProjects\untitled\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\santi\GitHub\batalla-elementos\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\santi\CLionProjects\untitled\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,125 +130,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named batalla_elementos
+# Target rules for targets named untitled
 
 # Build rule for target.
-batalla_elementos: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 batalla_elementos
-.PHONY : batalla_elementos
+untitled: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 untitled
+.PHONY : untitled
 
 # fast build rule for target.
-batalla_elementos/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/build
-.PHONY : batalla_elementos/fast
+untitled/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/build
+.PHONY : untitled/fast
 
-Agua.obj: Agua.cpp.obj
+DIccionario.obj: DIccionario.cpp.obj
 
-.PHONY : Agua.obj
-
-# target to build an object file
-Agua.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Agua.cpp.obj
-.PHONY : Agua.cpp.obj
-
-Agua.i: Agua.cpp.i
-
-.PHONY : Agua.i
-
-# target to preprocess a source file
-Agua.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Agua.cpp.i
-.PHONY : Agua.cpp.i
-
-Agua.s: Agua.cpp.s
-
-.PHONY : Agua.s
-
-# target to generate assembly for a file
-Agua.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Agua.cpp.s
-.PHONY : Agua.cpp.s
-
-Aire.obj: Aire.cpp.obj
-
-.PHONY : Aire.obj
+.PHONY : DIccionario.obj
 
 # target to build an object file
-Aire.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Aire.cpp.obj
-.PHONY : Aire.cpp.obj
+DIccionario.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/DIccionario.cpp.obj
+.PHONY : DIccionario.cpp.obj
 
-Aire.i: Aire.cpp.i
+DIccionario.i: DIccionario.cpp.i
 
-.PHONY : Aire.i
-
-# target to preprocess a source file
-Aire.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Aire.cpp.i
-.PHONY : Aire.cpp.i
-
-Aire.s: Aire.cpp.s
-
-.PHONY : Aire.s
-
-# target to generate assembly for a file
-Aire.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Aire.cpp.s
-.PHONY : Aire.cpp.s
-
-Diccionario.obj: Diccionario.cpp.obj
-
-.PHONY : Diccionario.obj
-
-# target to build an object file
-Diccionario.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Diccionario.cpp.obj
-.PHONY : Diccionario.cpp.obj
-
-Diccionario.i: Diccionario.cpp.i
-
-.PHONY : Diccionario.i
+.PHONY : DIccionario.i
 
 # target to preprocess a source file
-Diccionario.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Diccionario.cpp.i
-.PHONY : Diccionario.cpp.i
+DIccionario.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/DIccionario.cpp.i
+.PHONY : DIccionario.cpp.i
 
-Diccionario.s: Diccionario.cpp.s
+DIccionario.s: DIccionario.cpp.s
 
-.PHONY : Diccionario.s
-
-# target to generate assembly for a file
-Diccionario.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Diccionario.cpp.s
-.PHONY : Diccionario.cpp.s
-
-Fuego.obj: Fuego.cpp.obj
-
-.PHONY : Fuego.obj
-
-# target to build an object file
-Fuego.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Fuego.cpp.obj
-.PHONY : Fuego.cpp.obj
-
-Fuego.i: Fuego.cpp.i
-
-.PHONY : Fuego.i
-
-# target to preprocess a source file
-Fuego.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Fuego.cpp.i
-.PHONY : Fuego.cpp.i
-
-Fuego.s: Fuego.cpp.s
-
-.PHONY : Fuego.s
+.PHONY : DIccionario.s
 
 # target to generate assembly for a file
-Fuego.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Fuego.cpp.s
-.PHONY : Fuego.cpp.s
+DIccionario.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/DIccionario.cpp.s
+.PHONY : DIccionario.cpp.s
 
 Nodo.obj: Nodo.cpp.obj
 
@@ -256,7 +175,7 @@ Nodo.obj: Nodo.cpp.obj
 
 # target to build an object file
 Nodo.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Nodo.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/Nodo.cpp.obj
 .PHONY : Nodo.cpp.obj
 
 Nodo.i: Nodo.cpp.i
@@ -265,7 +184,7 @@ Nodo.i: Nodo.cpp.i
 
 # target to preprocess a source file
 Nodo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Nodo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/Nodo.cpp.i
 .PHONY : Nodo.cpp.i
 
 Nodo.s: Nodo.cpp.s
@@ -274,116 +193,62 @@ Nodo.s: Nodo.cpp.s
 
 # target to generate assembly for a file
 Nodo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Nodo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/Nodo.cpp.s
 .PHONY : Nodo.cpp.s
 
-Personaje.obj: Personaje.cpp.obj
+camino.obj: camino.cpp.obj
 
-.PHONY : Personaje.obj
-
-# target to build an object file
-Personaje.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Personaje.cpp.obj
-.PHONY : Personaje.cpp.obj
-
-Personaje.i: Personaje.cpp.i
-
-.PHONY : Personaje.i
-
-# target to preprocess a source file
-Personaje.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Personaje.cpp.i
-.PHONY : Personaje.cpp.i
-
-Personaje.s: Personaje.cpp.s
-
-.PHONY : Personaje.s
-
-# target to generate assembly for a file
-Personaje.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Personaje.cpp.s
-.PHONY : Personaje.cpp.s
-
-Tierra.obj: Tierra.cpp.obj
-
-.PHONY : Tierra.obj
+.PHONY : camino.obj
 
 # target to build an object file
-Tierra.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Tierra.cpp.obj
-.PHONY : Tierra.cpp.obj
+camino.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/camino.cpp.obj
+.PHONY : camino.cpp.obj
 
-Tierra.i: Tierra.cpp.i
+camino.i: camino.cpp.i
 
-.PHONY : Tierra.i
+.PHONY : camino.i
 
 # target to preprocess a source file
-Tierra.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Tierra.cpp.i
-.PHONY : Tierra.cpp.i
+camino.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/camino.cpp.i
+.PHONY : camino.cpp.i
 
-Tierra.s: Tierra.cpp.s
+camino.s: camino.cpp.s
 
-.PHONY : Tierra.s
+.PHONY : camino.s
 
 # target to generate assembly for a file
-Tierra.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Tierra.cpp.s
-.PHONY : Tierra.cpp.s
+camino.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/camino.cpp.s
+.PHONY : camino.cpp.s
 
-funciones.obj: funciones.cpp.obj
+lago.obj: lago.cpp.obj
 
-.PHONY : funciones.obj
+.PHONY : lago.obj
 
 # target to build an object file
-funciones.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/funciones.cpp.obj
-.PHONY : funciones.cpp.obj
+lago.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/lago.cpp.obj
+.PHONY : lago.cpp.obj
 
-funciones.i: funciones.cpp.i
+lago.i: lago.cpp.i
 
-.PHONY : funciones.i
-
-# target to preprocess a source file
-funciones.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/funciones.cpp.i
-.PHONY : funciones.cpp.i
-
-funciones.s: funciones.cpp.s
-
-.PHONY : funciones.s
-
-# target to generate assembly for a file
-funciones.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/funciones.cpp.s
-.PHONY : funciones.cpp.s
-
-jugador.obj: jugador.cpp.obj
-
-.PHONY : jugador.obj
-
-# target to build an object file
-jugador.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/jugador.cpp.obj
-.PHONY : jugador.cpp.obj
-
-jugador.i: jugador.cpp.i
-
-.PHONY : jugador.i
+.PHONY : lago.i
 
 # target to preprocess a source file
-jugador.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/jugador.cpp.i
-.PHONY : jugador.cpp.i
+lago.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/lago.cpp.i
+.PHONY : lago.cpp.i
 
-jugador.s: jugador.cpp.s
+lago.s: lago.cpp.s
 
-.PHONY : jugador.s
+.PHONY : lago.s
 
 # target to generate assembly for a file
-jugador.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/jugador.cpp.s
-.PHONY : jugador.cpp.s
+lago.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/lago.cpp.s
+.PHONY : lago.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -391,7 +256,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -400,7 +265,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -409,7 +274,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 menu.obj: menu.cpp.obj
@@ -418,7 +283,7 @@ menu.obj: menu.cpp.obj
 
 # target to build an object file
 menu.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/menu.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/menu.cpp.obj
 .PHONY : menu.cpp.obj
 
 menu.i: menu.cpp.i
@@ -427,7 +292,7 @@ menu.i: menu.cpp.i
 
 # target to preprocess a source file
 menu.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/menu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/menu.cpp.i
 .PHONY : menu.cpp.i
 
 menu.s: menu.cpp.s
@@ -436,8 +301,224 @@ menu.s: menu.cpp.s
 
 # target to generate assembly for a file
 menu.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/menu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/menu.cpp.s
 .PHONY : menu.cpp.s
+
+montania.obj: montania.cpp.obj
+
+.PHONY : montania.obj
+
+# target to build an object file
+montania.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/montania.cpp.obj
+.PHONY : montania.cpp.obj
+
+montania.i: montania.cpp.i
+
+.PHONY : montania.i
+
+# target to preprocess a source file
+montania.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/montania.cpp.i
+.PHONY : montania.cpp.i
+
+montania.s: montania.cpp.s
+
+.PHONY : montania.s
+
+# target to generate assembly for a file
+montania.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/montania.cpp.s
+.PHONY : montania.cpp.s
+
+personaje.obj: personaje.cpp.obj
+
+.PHONY : personaje.obj
+
+# target to build an object file
+personaje.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/personaje.cpp.obj
+.PHONY : personaje.cpp.obj
+
+personaje.i: personaje.cpp.i
+
+.PHONY : personaje.i
+
+# target to preprocess a source file
+personaje.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/personaje.cpp.i
+.PHONY : personaje.cpp.i
+
+personaje.s: personaje.cpp.s
+
+.PHONY : personaje.s
+
+# target to generate assembly for a file
+personaje.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/personaje.cpp.s
+.PHONY : personaje.cpp.s
+
+personaje_de_agua.obj: personaje_de_agua.cpp.obj
+
+.PHONY : personaje_de_agua.obj
+
+# target to build an object file
+personaje_de_agua.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/personaje_de_agua.cpp.obj
+.PHONY : personaje_de_agua.cpp.obj
+
+personaje_de_agua.i: personaje_de_agua.cpp.i
+
+.PHONY : personaje_de_agua.i
+
+# target to preprocess a source file
+personaje_de_agua.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/personaje_de_agua.cpp.i
+.PHONY : personaje_de_agua.cpp.i
+
+personaje_de_agua.s: personaje_de_agua.cpp.s
+
+.PHONY : personaje_de_agua.s
+
+# target to generate assembly for a file
+personaje_de_agua.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/personaje_de_agua.cpp.s
+.PHONY : personaje_de_agua.cpp.s
+
+personaje_de_aire.obj: personaje_de_aire.cpp.obj
+
+.PHONY : personaje_de_aire.obj
+
+# target to build an object file
+personaje_de_aire.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/personaje_de_aire.cpp.obj
+.PHONY : personaje_de_aire.cpp.obj
+
+personaje_de_aire.i: personaje_de_aire.cpp.i
+
+.PHONY : personaje_de_aire.i
+
+# target to preprocess a source file
+personaje_de_aire.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/personaje_de_aire.cpp.i
+.PHONY : personaje_de_aire.cpp.i
+
+personaje_de_aire.s: personaje_de_aire.cpp.s
+
+.PHONY : personaje_de_aire.s
+
+# target to generate assembly for a file
+personaje_de_aire.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/personaje_de_aire.cpp.s
+.PHONY : personaje_de_aire.cpp.s
+
+personaje_de_fuego.obj: personaje_de_fuego.cpp.obj
+
+.PHONY : personaje_de_fuego.obj
+
+# target to build an object file
+personaje_de_fuego.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/personaje_de_fuego.cpp.obj
+.PHONY : personaje_de_fuego.cpp.obj
+
+personaje_de_fuego.i: personaje_de_fuego.cpp.i
+
+.PHONY : personaje_de_fuego.i
+
+# target to preprocess a source file
+personaje_de_fuego.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/personaje_de_fuego.cpp.i
+.PHONY : personaje_de_fuego.cpp.i
+
+personaje_de_fuego.s: personaje_de_fuego.cpp.s
+
+.PHONY : personaje_de_fuego.s
+
+# target to generate assembly for a file
+personaje_de_fuego.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/personaje_de_fuego.cpp.s
+.PHONY : personaje_de_fuego.cpp.s
+
+personaje_de_tierra.obj: personaje_de_tierra.cpp.obj
+
+.PHONY : personaje_de_tierra.obj
+
+# target to build an object file
+personaje_de_tierra.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/personaje_de_tierra.cpp.obj
+.PHONY : personaje_de_tierra.cpp.obj
+
+personaje_de_tierra.i: personaje_de_tierra.cpp.i
+
+.PHONY : personaje_de_tierra.i
+
+# target to preprocess a source file
+personaje_de_tierra.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/personaje_de_tierra.cpp.i
+.PHONY : personaje_de_tierra.cpp.i
+
+personaje_de_tierra.s: personaje_de_tierra.cpp.s
+
+.PHONY : personaje_de_tierra.s
+
+# target to generate assembly for a file
+personaje_de_tierra.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/personaje_de_tierra.cpp.s
+.PHONY : personaje_de_tierra.cpp.s
+
+precipicio.obj: precipicio.cpp.obj
+
+.PHONY : precipicio.obj
+
+# target to build an object file
+precipicio.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/precipicio.cpp.obj
+.PHONY : precipicio.cpp.obj
+
+precipicio.i: precipicio.cpp.i
+
+.PHONY : precipicio.i
+
+# target to preprocess a source file
+precipicio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/precipicio.cpp.i
+.PHONY : precipicio.cpp.i
+
+precipicio.s: precipicio.cpp.s
+
+.PHONY : precipicio.s
+
+# target to generate assembly for a file
+precipicio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/precipicio.cpp.s
+.PHONY : precipicio.cpp.s
+
+vacio.obj: vacio.cpp.obj
+
+.PHONY : vacio.obj
+
+# target to build an object file
+vacio.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/vacio.cpp.obj
+.PHONY : vacio.cpp.obj
+
+vacio.i: vacio.cpp.i
+
+.PHONY : vacio.i
+
+# target to preprocess a source file
+vacio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/vacio.cpp.i
+.PHONY : vacio.cpp.i
+
+vacio.s: vacio.cpp.s
+
+.PHONY : vacio.s
+
+# target to generate assembly for a file
+vacio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/vacio.cpp.s
+.PHONY : vacio.cpp.s
 
 # Help Target
 help:
@@ -447,40 +528,49 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... batalla_elementos
-	@echo ... Agua.obj
-	@echo ... Agua.i
-	@echo ... Agua.s
-	@echo ... Aire.obj
-	@echo ... Aire.i
-	@echo ... Aire.s
-	@echo ... Diccionario.obj
-	@echo ... Diccionario.i
-	@echo ... Diccionario.s
-	@echo ... Fuego.obj
-	@echo ... Fuego.i
-	@echo ... Fuego.s
+	@echo ... untitled
+	@echo ... DIccionario.obj
+	@echo ... DIccionario.i
+	@echo ... DIccionario.s
 	@echo ... Nodo.obj
 	@echo ... Nodo.i
 	@echo ... Nodo.s
-	@echo ... Personaje.obj
-	@echo ... Personaje.i
-	@echo ... Personaje.s
-	@echo ... Tierra.obj
-	@echo ... Tierra.i
-	@echo ... Tierra.s
-	@echo ... funciones.obj
-	@echo ... funciones.i
-	@echo ... funciones.s
-	@echo ... jugador.obj
-	@echo ... jugador.i
-	@echo ... jugador.s
+	@echo ... camino.obj
+	@echo ... camino.i
+	@echo ... camino.s
+	@echo ... lago.obj
+	@echo ... lago.i
+	@echo ... lago.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
 	@echo ... menu.obj
 	@echo ... menu.i
 	@echo ... menu.s
+	@echo ... montania.obj
+	@echo ... montania.i
+	@echo ... montania.s
+	@echo ... personaje.obj
+	@echo ... personaje.i
+	@echo ... personaje.s
+	@echo ... personaje_de_agua.obj
+	@echo ... personaje_de_agua.i
+	@echo ... personaje_de_agua.s
+	@echo ... personaje_de_aire.obj
+	@echo ... personaje_de_aire.i
+	@echo ... personaje_de_aire.s
+	@echo ... personaje_de_fuego.obj
+	@echo ... personaje_de_fuego.i
+	@echo ... personaje_de_fuego.s
+	@echo ... personaje_de_tierra.obj
+	@echo ... personaje_de_tierra.i
+	@echo ... personaje_de_tierra.s
+	@echo ... precipicio.obj
+	@echo ... precipicio.i
+	@echo ... precipicio.s
+	@echo ... vacio.obj
+	@echo ... vacio.i
+	@echo ... vacio.s
 .PHONY : help
 
 

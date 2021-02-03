@@ -30,3 +30,11 @@ void Personaje::mostrar_detalles() {
     cout << "Vidas: " << vidas << endl;
     cout << "Energia: " << energia << endl;
 }
+
+bool Personaje::esta_vivo() {
+    return vidas > 0;
+}
+
+void Personaje::restar_energia(int costo_energia) {
+    energia -= costo_energia;
+}

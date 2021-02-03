@@ -14,18 +14,20 @@ int main()
     nuevo_menu.cargar_personajes("personajes.csv");
     nuevo_menu.interfaz();*/
     Diccionario* nuevo = new Diccionario;
-    Personaje* p_nuevo_3 = new Personaje_de_agua("a", 2, 1);
-    Personaje* p_nuevo = new Personaje_de_agua("cami", 2, 1);
-    Personaje* p_2 = new Personaje_de_fuego("frank", 2, 100);
-    nuevo->alta(p_nuevo->nombre_personaje(), p_nuevo);
-    nuevo->alta(p_nuevo_3->nombre_personaje(), p_nuevo_3);
-    nuevo->alta(p_2->nombre_personaje(), p_2);
+    Personaje* p1 = new Personaje_de_agua("a");
+    Personaje* p2 = new Personaje_de_fuego("frank");
+    Personaje* p3 = new Personaje_de_tierra("cami");
+    nuevo->alta("frank", p2);
+    nuevo->alta("a", p1);
+    nuevo->alta("cami", p3);
     nuevo->imprimir_inorden(nuevo->obtener_raiz());
     Nodo* minimo = nuevo->buscar_min(nuevo->obtener_raiz());
     cout << "el minimo es " << minimo->obtener_clave() << endl;
-    while(!nuevo->vacio()) {
-        Personaje* borrar = nuevo->baja(nuevo->obtener_raiz()->obtener_clave());
-        delete borrar;
-    }
+    nuevo->baja("a");
+    nuevo->baja("cami");
+    nuevo->baja("frank");
+    delete p1;
+    delete p2;
+    delete p3;
     delete nuevo;
 }

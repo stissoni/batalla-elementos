@@ -17,7 +17,7 @@ private:
     Nodo* padre;
     Clave clave;
 public:
-    explicit Nodo(Clave clave, Valor valor);
+    Nodo(Clave clave, Valor valor, Nodo* padre);
     void copiar_nodo(Nodo* n);
     bool es_hoja();
     void insertar_der(Nodo* der);
@@ -30,8 +30,7 @@ public:
     Valor obtener_valor();
     bool solo_hijo_der();
     bool solo_hijo_izq();
-    void cambiar_der(Nodo* nuevo);
-    void cambiar_izq(Nodo* nuevo);
+    void asignar_clave(Clave clave);
 
 };
 

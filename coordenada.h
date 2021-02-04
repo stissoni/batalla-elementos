@@ -9,6 +9,7 @@ private:
     int segunda;
 public:
     Coordenada(int _primera, int _segunda);
+    Coordenada() = default;
     int obtener_primera();
     int obtener_segunda();
     void cambiar_primera(int nueva);

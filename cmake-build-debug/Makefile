@@ -169,60 +169,6 @@ DIccionario.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/DIccionario.cpp.s
 .PHONY : DIccionario.cpp.s
 
-ListaAdyacencia.obj: ListaAdyacencia.cpp.obj
-
-.PHONY : ListaAdyacencia.obj
-
-# target to build an object file
-ListaAdyacencia.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/ListaAdyacencia.cpp.obj
-.PHONY : ListaAdyacencia.cpp.obj
-
-ListaAdyacencia.i: ListaAdyacencia.cpp.i
-
-.PHONY : ListaAdyacencia.i
-
-# target to preprocess a source file
-ListaAdyacencia.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/ListaAdyacencia.cpp.i
-.PHONY : ListaAdyacencia.cpp.i
-
-ListaAdyacencia.s: ListaAdyacencia.cpp.s
-
-.PHONY : ListaAdyacencia.s
-
-# target to generate assembly for a file
-ListaAdyacencia.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/ListaAdyacencia.cpp.s
-.PHONY : ListaAdyacencia.cpp.s
-
-Nodo.obj: Nodo.cpp.obj
-
-.PHONY : Nodo.obj
-
-# target to build an object file
-Nodo.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Nodo.cpp.obj
-.PHONY : Nodo.cpp.obj
-
-Nodo.i: Nodo.cpp.i
-
-.PHONY : Nodo.i
-
-# target to preprocess a source file
-Nodo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Nodo.cpp.i
-.PHONY : Nodo.cpp.i
-
-Nodo.s: Nodo.cpp.s
-
-.PHONY : Nodo.s
-
-# target to generate assembly for a file
-Nodo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/Nodo.cpp.s
-.PHONY : Nodo.cpp.s
-
 arista.obj: arista.cpp.obj
 
 .PHONY : arista.obj
@@ -331,6 +277,33 @@ coordenada.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/coordenada.cpp.s
 .PHONY : coordenada.cpp.s
 
+grafo.obj: grafo.cpp.obj
+
+.PHONY : grafo.obj
+
+# target to build an object file
+grafo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/grafo.cpp.obj
+.PHONY : grafo.cpp.obj
+
+grafo.i: grafo.cpp.i
+
+.PHONY : grafo.i
+
+# target to preprocess a source file
+grafo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/grafo.cpp.i
+.PHONY : grafo.cpp.i
+
+grafo.s: grafo.cpp.s
+
+.PHONY : grafo.s
+
+# target to generate assembly for a file
+grafo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/grafo.cpp.s
+.PHONY : grafo.cpp.s
+
 lago.obj: lago.cpp.obj
 
 .PHONY : lago.obj
@@ -357,6 +330,33 @@ lago.s: lago.cpp.s
 lago.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/lago.cpp.s
 .PHONY : lago.cpp.s
+
+lista.obj: lista.cpp.obj
+
+.PHONY : lista.obj
+
+# target to build an object file
+lista.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/lista.cpp.obj
+.PHONY : lista.cpp.obj
+
+lista.i: lista.cpp.i
+
+.PHONY : lista.i
+
+# target to preprocess a source file
+lista.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/lista.cpp.i
+.PHONY : lista.cpp.i
+
+lista.s: lista.cpp.s
+
+.PHONY : lista.s
+
+# target to generate assembly for a file
+lista.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/lista.cpp.s
+.PHONY : lista.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -438,6 +438,60 @@ montania.s: montania.cpp.s
 montania.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/montania.cpp.s
 .PHONY : montania.cpp.s
+
+nodo.obj: nodo.cpp.obj
+
+.PHONY : nodo.obj
+
+# target to build an object file
+nodo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/nodo.cpp.obj
+.PHONY : nodo.cpp.obj
+
+nodo.i: nodo.cpp.i
+
+.PHONY : nodo.i
+
+# target to preprocess a source file
+nodo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/nodo.cpp.i
+.PHONY : nodo.cpp.i
+
+nodo.s: nodo.cpp.s
+
+.PHONY : nodo.s
+
+# target to generate assembly for a file
+nodo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/nodo.cpp.s
+.PHONY : nodo.cpp.s
+
+nodo_diccionario.obj: nodo_diccionario.cpp.obj
+
+.PHONY : nodo_diccionario.obj
+
+# target to build an object file
+nodo_diccionario.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/nodo_diccionario.cpp.obj
+.PHONY : nodo_diccionario.cpp.obj
+
+nodo_diccionario.i: nodo_diccionario.cpp.i
+
+.PHONY : nodo_diccionario.i
+
+# target to preprocess a source file
+nodo_diccionario.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/nodo_diccionario.cpp.i
+.PHONY : nodo_diccionario.cpp.i
+
+nodo_diccionario.s: nodo_diccionario.cpp.s
+
+.PHONY : nodo_diccionario.s
+
+# target to generate assembly for a file
+nodo_diccionario.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\batalla_elementos.dir\build.make CMakeFiles/batalla_elementos.dir/nodo_diccionario.cpp.s
+.PHONY : nodo_diccionario.cpp.s
 
 personaje.obj: personaje.cpp.obj
 
@@ -694,12 +748,6 @@ help:
 	@echo ... DIccionario.obj
 	@echo ... DIccionario.i
 	@echo ... DIccionario.s
-	@echo ... ListaAdyacencia.obj
-	@echo ... ListaAdyacencia.i
-	@echo ... ListaAdyacencia.s
-	@echo ... Nodo.obj
-	@echo ... Nodo.i
-	@echo ... Nodo.s
 	@echo ... arista.obj
 	@echo ... arista.i
 	@echo ... arista.s
@@ -712,9 +760,15 @@ help:
 	@echo ... coordenada.obj
 	@echo ... coordenada.i
 	@echo ... coordenada.s
+	@echo ... grafo.obj
+	@echo ... grafo.i
+	@echo ... grafo.s
 	@echo ... lago.obj
 	@echo ... lago.i
 	@echo ... lago.s
+	@echo ... lista.obj
+	@echo ... lista.i
+	@echo ... lista.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
@@ -724,6 +778,12 @@ help:
 	@echo ... montania.obj
 	@echo ... montania.i
 	@echo ... montania.s
+	@echo ... nodo.obj
+	@echo ... nodo.i
+	@echo ... nodo.s
+	@echo ... nodo_diccionario.obj
+	@echo ... nodo_diccionario.i
+	@echo ... nodo_diccionario.s
 	@echo ... personaje.obj
 	@echo ... personaje.i
 	@echo ... personaje.s

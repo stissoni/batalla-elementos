@@ -89,18 +89,6 @@
 		<Unit filename="C:/Users/santi/batalla-elementos/Diccionario.h">
 			<Option target="batalla_elementos"/>
 		</Unit>
-		<Unit filename="C:/Users/santi/batalla-elementos/ListaAdyacencia.cpp">
-			<Option target="batalla_elementos"/>
-		</Unit>
-		<Unit filename="C:/Users/santi/batalla-elementos/ListaAdyacencia.h">
-			<Option target="batalla_elementos"/>
-		</Unit>
-		<Unit filename="C:/Users/santi/batalla-elementos/Nodo.cpp">
-			<Option target="batalla_elementos"/>
-		</Unit>
-		<Unit filename="C:/Users/santi/batalla-elementos/Nodo.h">
-			<Option target="batalla_elementos"/>
-		</Unit>
 		<Unit filename="C:/Users/santi/batalla-elementos/arista.cpp">
 			<Option target="batalla_elementos"/>
 		</Unit>
@@ -125,6 +113,12 @@
 		<Unit filename="C:/Users/santi/batalla-elementos/coordenada.h">
 			<Option target="batalla_elementos"/>
 		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/grafo.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/grafo.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
 		<Unit filename="C:/Users/santi/batalla-elementos/juego.h">
 			<Option target="batalla_elementos"/>
 		</Unit>
@@ -132,6 +126,12 @@
 			<Option target="batalla_elementos"/>
 		</Unit>
 		<Unit filename="C:/Users/santi/batalla-elementos/lago.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/lista.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/lista.h">
 			<Option target="batalla_elementos"/>
 		</Unit>
 		<Unit filename="C:/Users/santi/batalla-elementos/main.cpp">
@@ -147,6 +147,18 @@
 			<Option target="batalla_elementos"/>
 		</Unit>
 		<Unit filename="C:/Users/santi/batalla-elementos/montania.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/nodo.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/nodo.h">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/nodo_diccionario.cpp">
+			<Option target="batalla_elementos"/>
+		</Unit>
+		<Unit filename="C:/Users/santi/batalla-elementos/nodo_diccionario.h">
 			<Option target="batalla_elementos"/>
 		</Unit>
 		<Unit filename="C:/Users/santi/batalla-elementos/personaje.cpp">

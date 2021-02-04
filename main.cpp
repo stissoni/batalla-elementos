@@ -21,7 +21,7 @@ int main()
     nuevo->alta("a", p1);
     nuevo->alta("cami", p3);
     nuevo->imprimir_inorden(nuevo->obtener_raiz());
-    Nodo* minimo = nuevo->buscar_min(nuevo->obtener_raiz());
+    nodo_diccionario* minimo = nuevo->buscar_min(nuevo->obtener_raiz());
     cout << "el minimo es " << minimo->obtener_clave() << endl;
 
     delete nuevo; // ac se produce el segdault MAURIIIIIII

@@ -1,13 +1,13 @@
 #ifndef TP2_BATALLA_ELEMENTOS_ARBOL_H
 #define TP2_BATALLA_ELEMENTOS_ARBOL_H
 
-#include "Nodo.h"
+#include "nodo_diccionario.h"
 #include <string>
 
 class Diccionario {
 private:
-    Nodo* raiz;
-    Nodo* actual;
+    nodo_diccionario* raiz;
+    nodo_diccionario* actual;
 
 public:
     // Constructor.
@@ -20,7 +20,7 @@ public:
     void baja(Clave clave);
 
     // Encuentra el minimo valor en el diccionario.
-    Nodo* buscar_min(Nodo* raiz);
+    nodo_diccionario* buscar_min(nodo_diccionario* raiz);
 
     // Se le pasa una clave, y devuelve un puntero a Personaje si lo encuentra con la clave proporcionada.
     Valor consulta(Clave clave);
@@ -32,9 +32,9 @@ public:
     bool esta_clave(Clave clave);
 
     // Imprime las claves del diccionario, siguiendo recorrido inorden
-    void imprimir_inorden(Nodo* aux);
+    void imprimir_inorden(nodo_diccionario* aux);
 
-    Nodo* obtener_raiz();
+    nodo_diccionario* obtener_raiz();
 
     // Devuelve true si el diccionario esta vacio, false de lo contrario.
     bool vacio();
@@ -44,21 +44,21 @@ public:
 
     Clave obtener_clave_raiz();
 
-    Nodo* crear_nodo(Clave clave, Valor valor);
+    nodo_diccionario* crear_nodo(Clave clave, Valor valor);
 
 
-    void _alta(Clave clave, Valor valor, Nodo* nodo, Nodo* padre);
+    void _alta(Clave clave, Valor valor, nodo_diccionario* nodo, nodo_diccionario* padre);
 
-    void reemplazar_nodo(Nodo* antiguo, Nodo* nuevo);
+    void reemplazar_nodo(nodo_diccionario* antiguo, nodo_diccionario* nuevo);
 
-    void eliminar_nodo(Nodo* eliminar);
+    void eliminar_nodo(nodo_diccionario* eliminar);
 
 private:
-    void _baja(Nodo* n, Clave clave);
-    //Valor baja_nodo(Nodo* padre, Nodo* nodo_borrar, bool izq);
+    void _baja(nodo_diccionario* n, Clave clave);
+    //Valor baja_nodo(nodo_diccionario* padre, nodo_diccionario* nodo_borrar, bool izq);
     //Valor baja_raiz();
-    void eliminar_subarbol(Nodo* borrar);
-    bool _esta_clave(Nodo* n, Clave clave);
+    void eliminar_subarbol(nodo_diccionario* borrar);
+    bool _esta_clave(nodo_diccionario* n, Clave clave);
 };
 
 #endif //TP2_BATALLA_ELEMENTOS_ARBOL_H

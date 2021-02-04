@@ -167,18 +167,18 @@ CMakeFiles/batalla_elementos.dir/montania.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/batalla_elementos.dir/montania.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\santi\batalla-elementos\montania.cpp -o CMakeFiles\batalla_elementos.dir\montania.cpp.s
 
-CMakeFiles/batalla_elementos.dir/Nodo.cpp.obj: CMakeFiles/batalla_elementos.dir/flags.make
-CMakeFiles/batalla_elementos.dir/Nodo.cpp.obj: ../Nodo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\santi\batalla-elementos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/batalla_elementos.dir/Nodo.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\batalla_elementos.dir\Nodo.cpp.obj -c C:\Users\santi\batalla-elementos\Nodo.cpp
+CMakeFiles/batalla_elementos.dir/nodo_diccionario.cpp.obj: CMakeFiles/batalla_elementos.dir/flags.make
+CMakeFiles/batalla_elementos.dir/nodo_diccionario.cpp.obj: ../nodo_diccionario.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\santi\batalla-elementos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/batalla_elementos.dir/nodo_diccionario.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\batalla_elementos.dir\nodo_diccionario.cpp.obj -c C:\Users\santi\batalla-elementos\nodo_diccionario.cpp
 
-CMakeFiles/batalla_elementos.dir/Nodo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/batalla_elementos.dir/Nodo.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\santi\batalla-elementos\Nodo.cpp > CMakeFiles\batalla_elementos.dir\Nodo.cpp.i
+CMakeFiles/batalla_elementos.dir/nodo_diccionario.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/batalla_elementos.dir/nodo_diccionario.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\santi\batalla-elementos\nodo_diccionario.cpp > CMakeFiles\batalla_elementos.dir\nodo_diccionario.cpp.i
 
-CMakeFiles/batalla_elementos.dir/Nodo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/batalla_elementos.dir/Nodo.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\santi\batalla-elementos\Nodo.cpp -o CMakeFiles\batalla_elementos.dir\Nodo.cpp.s
+CMakeFiles/batalla_elementos.dir/nodo_diccionario.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/batalla_elementos.dir/nodo_diccionario.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\santi\batalla-elementos\nodo_diccionario.cpp -o CMakeFiles\batalla_elementos.dir\nodo_diccionario.cpp.s
 
 CMakeFiles/batalla_elementos.dir/personaje.cpp.obj: CMakeFiles/batalla_elementos.dir/flags.make
 CMakeFiles/batalla_elementos.dir/personaje.cpp.obj: ../personaje.cpp
@@ -310,18 +310,18 @@ CMakeFiles/batalla_elementos.dir/vertice.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/batalla_elementos.dir/vertice.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\santi\batalla-elementos\vertice.cpp -o CMakeFiles\batalla_elementos.dir\vertice.cpp.s
 
-CMakeFiles/batalla_elementos.dir/ListaAdyacencia.cpp.obj: CMakeFiles/batalla_elementos.dir/flags.make
-CMakeFiles/batalla_elementos.dir/ListaAdyacencia.cpp.obj: ../ListaAdyacencia.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\santi\batalla-elementos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/batalla_elementos.dir/ListaAdyacencia.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\batalla_elementos.dir\ListaAdyacencia.cpp.obj -c C:\Users\santi\batalla-elementos\ListaAdyacencia.cpp
+CMakeFiles/batalla_elementos.dir/lista.cpp.obj: CMakeFiles/batalla_elementos.dir/flags.make
+CMakeFiles/batalla_elementos.dir/lista.cpp.obj: ../lista.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\santi\batalla-elementos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/batalla_elementos.dir/lista.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\batalla_elementos.dir\lista.cpp.obj -c C:\Users\santi\batalla-elementos\lista.cpp
 
-CMakeFiles/batalla_elementos.dir/ListaAdyacencia.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/batalla_elementos.dir/ListaAdyacencia.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\santi\batalla-elementos\ListaAdyacencia.cpp > CMakeFiles\batalla_elementos.dir\ListaAdyacencia.cpp.i
+CMakeFiles/batalla_elementos.dir/lista.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/batalla_elementos.dir/lista.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\santi\batalla-elementos\lista.cpp > CMakeFiles\batalla_elementos.dir\lista.cpp.i
 
-CMakeFiles/batalla_elementos.dir/ListaAdyacencia.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/batalla_elementos.dir/ListaAdyacencia.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\santi\batalla-elementos\ListaAdyacencia.cpp -o CMakeFiles\batalla_elementos.dir\ListaAdyacencia.cpp.s
+CMakeFiles/batalla_elementos.dir/lista.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/batalla_elementos.dir/lista.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\santi\batalla-elementos\lista.cpp -o CMakeFiles\batalla_elementos.dir\lista.cpp.s
 
 CMakeFiles/batalla_elementos.dir/coordenada.cpp.obj: CMakeFiles/batalla_elementos.dir/flags.make
 CMakeFiles/batalla_elementos.dir/coordenada.cpp.obj: ../coordenada.cpp
@@ -336,6 +336,32 @@ CMakeFiles/batalla_elementos.dir/coordenada.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/batalla_elementos.dir/coordenada.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\santi\batalla-elementos\coordenada.cpp -o CMakeFiles\batalla_elementos.dir\coordenada.cpp.s
 
+CMakeFiles/batalla_elementos.dir/nodo.cpp.obj: CMakeFiles/batalla_elementos.dir/flags.make
+CMakeFiles/batalla_elementos.dir/nodo.cpp.obj: ../nodo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\santi\batalla-elementos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/batalla_elementos.dir/nodo.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\batalla_elementos.dir\nodo.cpp.obj -c C:\Users\santi\batalla-elementos\nodo.cpp
+
+CMakeFiles/batalla_elementos.dir/nodo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/batalla_elementos.dir/nodo.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\santi\batalla-elementos\nodo.cpp > CMakeFiles\batalla_elementos.dir\nodo.cpp.i
+
+CMakeFiles/batalla_elementos.dir/nodo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/batalla_elementos.dir/nodo.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\santi\batalla-elementos\nodo.cpp -o CMakeFiles\batalla_elementos.dir\nodo.cpp.s
+
+CMakeFiles/batalla_elementos.dir/grafo.cpp.obj: CMakeFiles/batalla_elementos.dir/flags.make
+CMakeFiles/batalla_elementos.dir/grafo.cpp.obj: ../grafo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\santi\batalla-elementos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/batalla_elementos.dir/grafo.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\batalla_elementos.dir\grafo.cpp.obj -c C:\Users\santi\batalla-elementos\grafo.cpp
+
+CMakeFiles/batalla_elementos.dir/grafo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/batalla_elementos.dir/grafo.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\santi\batalla-elementos\grafo.cpp > CMakeFiles\batalla_elementos.dir\grafo.cpp.i
+
+CMakeFiles/batalla_elementos.dir/grafo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/batalla_elementos.dir/grafo.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\santi\batalla-elementos\grafo.cpp -o CMakeFiles\batalla_elementos.dir\grafo.cpp.s
+
 # Object files for target batalla_elementos
 batalla_elementos_OBJECTS = \
 "CMakeFiles/batalla_elementos.dir/main.cpp.obj" \
@@ -345,7 +371,7 @@ batalla_elementos_OBJECTS = \
 "CMakeFiles/batalla_elementos.dir/lago.cpp.obj" \
 "CMakeFiles/batalla_elementos.dir/menu.cpp.obj" \
 "CMakeFiles/batalla_elementos.dir/montania.cpp.obj" \
-"CMakeFiles/batalla_elementos.dir/Nodo.cpp.obj" \
+"CMakeFiles/batalla_elementos.dir/nodo_diccionario.cpp.obj" \
 "CMakeFiles/batalla_elementos.dir/personaje.cpp.obj" \
 "CMakeFiles/batalla_elementos.dir/personaje_de_tierra.cpp.obj" \
 "CMakeFiles/batalla_elementos.dir/personaje_de_fuego.cpp.obj" \
@@ -356,8 +382,10 @@ batalla_elementos_OBJECTS = \
 "CMakeFiles/batalla_elementos.dir/volcan.cpp.obj" \
 "CMakeFiles/batalla_elementos.dir/arista.cpp.obj" \
 "CMakeFiles/batalla_elementos.dir/vertice.cpp.obj" \
-"CMakeFiles/batalla_elementos.dir/ListaAdyacencia.cpp.obj" \
-"CMakeFiles/batalla_elementos.dir/coordenada.cpp.obj"
+"CMakeFiles/batalla_elementos.dir/lista.cpp.obj" \
+"CMakeFiles/batalla_elementos.dir/coordenada.cpp.obj" \
+"CMakeFiles/batalla_elementos.dir/nodo.cpp.obj" \
+"CMakeFiles/batalla_elementos.dir/grafo.cpp.obj"
 
 # External object files for target batalla_elementos
 batalla_elementos_EXTERNAL_OBJECTS =
@@ -369,7 +397,7 @@ batalla_elementos.exe: CMakeFiles/batalla_elementos.dir/DIccionario.cpp.obj
 batalla_elementos.exe: CMakeFiles/batalla_elementos.dir/lago.cpp.obj
 batalla_elementos.exe: CMakeFiles/batalla_elementos.dir/menu.cpp.obj
 batalla_elementos.exe: CMakeFiles/batalla_elementos.dir/montania.cpp.obj
-batalla_elementos.exe: CMakeFiles/batalla_elementos.dir/Nodo.cpp.obj
+batalla_elementos.exe: CMakeFiles/batalla_elementos.dir/nodo_diccionario.cpp.obj
 batalla_elementos.exe: CMakeFiles/batalla_elementos.dir/personaje.cpp.obj
 batalla_elementos.exe: CMakeFiles/batalla_elementos.dir/personaje_de_tierra.cpp.obj
 batalla_elementos.exe: CMakeFiles/batalla_elementos.dir/personaje_de_fuego.cpp.obj
@@ -380,13 +408,15 @@ batalla_elementos.exe: CMakeFiles/batalla_elementos.dir/vacio.cpp.obj
 batalla_elementos.exe: CMakeFiles/batalla_elementos.dir/volcan.cpp.obj
 batalla_elementos.exe: CMakeFiles/batalla_elementos.dir/arista.cpp.obj
 batalla_elementos.exe: CMakeFiles/batalla_elementos.dir/vertice.cpp.obj
-batalla_elementos.exe: CMakeFiles/batalla_elementos.dir/ListaAdyacencia.cpp.obj
+batalla_elementos.exe: CMakeFiles/batalla_elementos.dir/lista.cpp.obj
 batalla_elementos.exe: CMakeFiles/batalla_elementos.dir/coordenada.cpp.obj
+batalla_elementos.exe: CMakeFiles/batalla_elementos.dir/nodo.cpp.obj
+batalla_elementos.exe: CMakeFiles/batalla_elementos.dir/grafo.cpp.obj
 batalla_elementos.exe: CMakeFiles/batalla_elementos.dir/build.make
 batalla_elementos.exe: CMakeFiles/batalla_elementos.dir/linklibs.rsp
 batalla_elementos.exe: CMakeFiles/batalla_elementos.dir/objects1.rsp
 batalla_elementos.exe: CMakeFiles/batalla_elementos.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\santi\batalla-elementos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable batalla_elementos.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\santi\batalla-elementos\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable batalla_elementos.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\batalla_elementos.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

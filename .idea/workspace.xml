@@ -11,15 +11,21 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50ad5b39-8d0c-4b97-a15e-657940e609d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ListaAdyacencia.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ListaAdyacencia.h" afterDir="false" />
+    <list default="true" id="50ad5b39-8d0c-4b97-a15e-657940e609d1" name="Default Changelist" comment="Nuevos archivos">
+      <change afterPath="$PROJECT_DIR$/grafo.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grafo.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodo.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodo.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DIccionario.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DIccionario.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Diccionario.h" beforeDir="false" afterPath="$PROJECT_DIR$/Diccionario.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ListaAdyacencia.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lista.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ListaAdyacencia.h" beforeDir="false" afterPath="$PROJECT_DIR$/lista.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nodo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/nodo_diccionario.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nodo.h" beforeDir="false" afterPath="$PROJECT_DIR$/nodo_diccionario.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arista.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/arista.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arista.h" beforeDir="false" afterPath="$PROJECT_DIR$/arista.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
@@ -32,13 +38,17 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/20" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/batalla_elementos.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/batalla_elementos.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/batalla_elementos.dir/DIccionario.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/batalla_elementos.dir/DIccionario.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/batalla_elementos.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/batalla_elementos.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/batalla_elementos.dir/ListaAdyacencia.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/batalla_elementos.dir/Nodo.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/batalla_elementos.dir/Nodo.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/batalla_elementos.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/batalla_elementos.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/batalla_elementos.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/batalla_elementos.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/batalla_elementos.dir/coordenada.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/batalla_elementos.dir/coordenada.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/batalla_elementos.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/batalla_elementos.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/batalla_elementos.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/batalla_elementos.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/batalla_elementos.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/batalla_elementos.dir/flags.make" afterDir="false" />
@@ -54,6 +64,9 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/batalla_elementos.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/batalla_elementos.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coordenada.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/coordenada.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coordenada.h" beforeDir="false" afterPath="$PROJECT_DIR$/coordenada.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vertice.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vertice.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vertice.h" beforeDir="false" afterPath="$PROJECT_DIR$/vertice.h" afterDir="false" />
     </list>
@@ -79,6 +92,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
@@ -111,7 +130,7 @@
       <workItem from="1612392373651" duration="21000" />
       <workItem from="1612392428687" duration="517000" />
       <workItem from="1612392962977" duration="1561000" />
-      <workItem from="1612394551224" duration="390000" />
+      <workItem from="1612394551224" duration="3062000" />
     </task>
     <servers />
   </component>
@@ -129,5 +148,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Nuevos archivos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nuevos archivos" />
   </component>
 </project>
